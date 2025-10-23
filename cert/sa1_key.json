@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "redlake-474918",
+  "private_key_id": "2bf6d2f83eef46d482d4b2e280be2308f0f628ab",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDEzN4ZV4vi2njP\nvU8S3L60okFs9LEYyw4DCJmfIdsc4L6rrr7rjkHVnLXzire156wv8na8l16wcORB\nTd9btJzBnXfK4eAlQ8IxH5jtPMkv600uTT8LmTdOxmnGjrSOTQ5HZJsJS5YuhnuL\n8gLQYx7Sl5TzQjovEHVM5V899y4iNOyrfT4Djj9rflpBP40SIMthYDn1B0Nf6If0\nQ1WDwz0NwMF2iAIy+xig14Fdgnp8NZhEAYvGN6IgrEFjCO+8a9ZL+G3OMmYUzcLI\nN3w0+RDN7qVC69Qk8VaPFgTtyF3ubBVq4pVcJvo+18S7IHrsHXFRa892Xys3YVkN\nKaY+p87PAgMBAAECggEADSYNm26DT3TT/Y04a0TfDlKI7IQCERX//v6OxQMOEK/e\nDWUaJxgqGIuP3JBiwH8/ZzSxRN3C2ycFGRfgLyWyE32MiLxEAuQJZXQm/jLBfmIf\nlf2zPfh5VC9i1yanCZrnCVNqHa+J09ydrzahhCrF3xbMQjR6jrUay+McqeyJ4zRo\nBuYd9o2OAYkN7Z87yzOe7Rwt1pHQFRMu7mGTL9YiiDoBLbB1+ND3m0hR7NqgeNhs\nr7wIa8G3qsiJ25wjY1K1pDB2fIHm1eb9/5GDnow9KoSJnz1KZrhfDeZNJtXig4HX\nE9k93PBhyzabb7seEq93ZPnRXtytGx66kIIb8//BAQKBgQDkTasQGpiGJFlnN8FB\n0LLLePfGsHPKR6aRXhSf7U3+KyPe7oTXjFIroOpkaqt71M1WKG1s00O73RPpUR5K\n7e9xlVvPPyxHCj4Y/bzIEnojIjYdFzEb5KxWJ5BKgbcfsnG51pP91R8Xy3EyymB8\nnZ9bG6ZwRvv/sLXAU577aJOVtwKBgQDcrNGVUL6T6c+LH8xSIQkAzPFSDgdkHL50\nd+glwjDR2IaCCuD2+JLDH7xSRzs+X3tEb+Ho3IhvWvgclSbh9Cu7nj7DN9lWFomC\nvgkERH3uheRBetaH/z/8m5gaURLhE3/RvIMwRGevkhdKybOmMQOT7GxyApmpWvKr\nenAO4i3PqQKBgFt9QHsQnWTMNkOl1T1hu/TMQkcOOSirs/V3RT6do26irRpObU/P\nvLIdJzEciiHysmK/irJcqz0iqDMMvd37IcRbvVH9F+pUEXSEYl2vAeEIebUIsTZj\nWiigbDNfbho2sVpuwhmriW1IqtFWxnnJ1K13FCjUWXIqx3sOR5yqWNJbAoGBALdv\n+TBT1HgELgAKSMAkseU2d4usGbzAoBkU66cni4mEohtLi8IA047bvKHwkHDC0icL\nkhEN8WQPjJvF6HJ/lDL70lRZApMrXNePvNMNVFmIdztvLxIRvlDvzjpiFn1+xgvE\n1pCy7DXoDPCgRnPp3n2CVItZWf6LmZmtx6S3ozkxAoGAWVtMc2Kxe/HcuNto70p4\nln9mrCmSw/CjymXY1zskvlXztSyhyNv6xmmGOIn+aer8NHM+v1kZ1wjkI/CmKBmr\n19Ge/yjDeQLp2p6ClYQk/wWRCOAWArSwyRF+CfJDd4XCIZ6A9Mw1K3GCRnRPWKI/\nkGAAsh/FdVVxHh6+tjSDah8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "redlake-sa1@redlake-474918.iam.gserviceaccount.com",
+  "client_id": "105922600621285328255",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/redlake-sa1%40redlake-474918.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
