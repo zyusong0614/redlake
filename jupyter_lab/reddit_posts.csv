@@ -20,642 +20,867 @@ Hello /r/Python! It's time to share what you've been working on! Whether it's a 
 2. **Web Scraping**: Built a script to scrape and analyze news articles. It's helped me understand media bias better.
 3. **Automation**: Automated my home lighting with Python and Raspberry Pi. My life has never been easier!
 
-Let's build and grow together! Share your journey and learn from others. Happy coding! 🌟",0.57,1,0,1
-Python,Saturday Daily Thread: Resource Request and Sharing! Daily Thread,"# Weekly Thread: Resource Request and Sharing 📚
+Let's build and grow together! Share your journey and learn from others. Happy coding! 🌟",0.76,2,0,2
+Python,Tuesday Daily Thread: Advanced questions,"# Weekly Wednesday Thread: Advanced Questions 🐍
 
-Stumbled upon a useful Python resource? Or are you looking for a guide on a specific topic? Welcome to the Resource Request and Sharing thread!
+Dive deep into Python with our Advanced Questions thread! This space is reserved for questions about more advanced Python topics, frameworks, and best practices.
 
 ## How it Works:
 
-1. **Request**: Can't find a resource on a particular topic? Ask here!
-2. **Share**: Found something useful? Share it with the community.
-3. **Review**: Give or get opinions on Python resources you've used.
+1. **Ask Away**: Post your advanced Python questions here.
+2. **Expert Insights**: Get answers from experienced developers.
+3. **Resource Pool**: Share or discover tutorials, articles, and tips.
 
 ## Guidelines:
 
-* Please include the type of resource (e.g., book, video, article) and the topic.
-* Always be respectful when reviewing someone else's shared resource.
+* This thread is for **advanced questions only**. Beginner questions are welcome in our [Daily Beginner Thread](#daily-beginner-thread-link) every Thursday.
+* Questions that are not advanced may be removed and redirected to the appropriate thread.
 
-## Example Shares:
+## Recommended Resources:
 
-1. **Book**: [""Fluent Python""](https://www.amazon.com/Fluent-Python-Concise-Effective-Programming/dp/1491946008) \- Great for understanding Pythonic idioms.
-2. **Video**: [Python Data Structures](https://www.youtube.com/watch?v=pkYVOmU3MgA) \- Excellent overview of Python's built-in data structures.
-3. **Article**: [Understanding Python Decorators](https://realpython.com/primer-on-python-decorators/) \- A deep dive into decorators.
+* If you don't receive a response, consider exploring r/LearnPython or join the [Python Discord Server](https://discord.gg/python) for quicker assistance.
 
-## Example Requests:
+## Example Questions:
 
-1. **Looking for**: Video tutorials on web scraping with Python.
-2. **Need**: Book recommendations for Python machine learning.
+1. **How can you implement a custom memory allocator in Python?**
+2. **What are the best practices for optimizing Cython code for heavy numerical computations?**
+3. **How do you set up a multi-threaded architecture using Python's Global Interpreter Lock (GIL)?**
+4. **Can you explain the intricacies of metaclasses and how they influence object-oriented design in Python?**
+5. **How would you go about implementing a distributed task queue using Celery and RabbitMQ?**
+6. **What are some advanced use-cases for Python's decorators?**
+7. **How can you achieve real-time data streaming in Python with WebSockets?**
+8. **What are the performance implications of using native Python data structures vs NumPy arrays for large-scale data?**
+9. **Best practices for securing a Flask (or similar) REST API with OAuth 2.0?**
+10. **What are the best practices for using Python in a microservices architecture? (..and more generally, should I even use microservices?)**
 
-Share the knowledge, enrich the community. Happy learning! 🌟",0.67,1,0,1
-Python,"I made a game that is teaching you Python! :) After more than three years, I finally released it!","It's called The Farmer Was Replaced
+Let's deepen our Python knowledge together. Happy coding! 🌟",0.67,1,0,1
+Python,How common is Pydantic now?,"Ive had several companies asking about it over the last few months but, I personally havent used it much. 
 
-Program and optimize a drone to automate a farm and watch it do the work for you. Collect resources to unlock better technology and become the most efficient farmer in the world. Improve your problem solving and coding skills.
+Im strongly considering looking into it since it seems to be rather popular?
 
-Unlike most programming games the game isn't divided into distinct levels that you have to complete but features a continuous progression.
+What is your personal experience with Pydantic?",0.94,41,0,41
+Python,Parallel and Concurrent Programming in Python: A Practical Guide,"Hey everyone
 
-Farming earns you resources which can be spent to unlock new technology.
+I just made a nice video about concurrent and parallel in python using threads and processes.
 
-Programming is done in a simple language similar to Python. The beginning of the game is designed to teach you all the basic programming concepts you will need by introducing them one at a time.
 
-While it introduces everything that is relevant, it won't hold your hand when it comes to solving the various tasks in the game. You will have to figure those out for yourself, and that can be very challenging if you have never programmed before.
 
-If you are an experienced programmer, you should be able to get through the early game very quickly and move on to the more complex tasks of the later game, which should still provide interesting challenges.
+it shows you the differences along with some real word use cases for both, and it also shows how to 
 
-Although the programming language isn't exactly Python, it's similar enough that Python IntelliSense works well with it. All code is stored in .py files and can optionally be edited using external code editors like VS Code. When the ""File Watcher"" setting is enabled, the game automatically detects external changes.
+safely pass data between threads by using mutexes.
 
-You can find it here: [https://store.steampowered.com/app/2060160/The\_Farmer\_Was\_Replaced/](https://store.steampowered.com/app/2060160?utm_source=RD)",0.95,243,0,243
-Python,Best practices for using Python &amp; uv inside Docker,"Getting `uv` right inside Docker is a bit tricky and even their [official recommendations](https://docs.astral.sh/uv/guides/integration/docker/) are not optimal.
 
-It is better to use a [two-step build process](https://ashishb.net/programming/using-python-uv-inside-docker/) to eliminate `uv` from the final image size.
 
-A two-step build process not only saves disk space but also reduces attack surface against [security vulerabilities](https://astral.sh/blog/uv-security-advisory-cve-2025-54368)",0.88,149,0,149
-Python,I made a Better Notepad alternative using PySide6,"# What My Project Does
+we first start by creating a program which doesn't use concurrent or parallel techniques (threads or processes)
 
-ZenNotes is a minimalistic Notepad app with a sleek design inspired by the Fluent Design. It offers the familiar look of the Windows Notepad while having much more powerful features like Translate, TTS, etc.
+but then we write the same program with those techniques and see the performance differences.
 
-# Target Audience
 
-Anyone who uses Windows Notepad, or noepads in general
 
-# Comparison 
+I invite you to watch the video: [https://www.youtube.com/watch?v=IQxKjGEVteI](https://www.youtube.com/watch?v=IQxKjGEVteI)",0.88,44,0,44
+Python,I built a Go-like channel package for Python asyncio,"[Repositoy here ](https://github.com/Gwali-1/PY_CHANNELS_ASYNC)
 
-The target competition is Windows Notepad. ZenNotes is like an ""extension"" of Windows Notepad, with similar looks but much more features, like TTS, Translate, etc.
+Docs here  =&gt; https://gwali-1.github.io/PY_CHANNELS_ASYNC/
 
-# GitHub
+Roughly a month ago, I was looking into concurrency as a topic, specifically async-await implementation internals in C# trying to understand the various components Involved, like the event loop, scheduling etc.
 
-[https://github.com/rohankishore/ZenNotes](https://github.com/rohankishore/ZenNotes)",0.77,24,0,24
-Python,"Announcing html-to-markdown v2: Rust rewrite, full CommonMark 1.2 compliance, and hOCR support","Hi Pythonistas,
+After sometime I understood enough to want to implement a channel data structure in Python so I built one. 
 
-I'm glad to announce the v2 release of [html-to-markdown](https://github.com/Goldziher/html-to-markdown).
+**What My Project Does.**
 
-This library started life as a fork of `markdownify`, a Python library for converting HTML to Markdown. I forked it originally because I needed modern type hints, but then found myself rewriting the entire thing. Over time it became essential for [kreuzberg](https://github.com/Goldziher/kreuzberg), where it serves as a backbone for both html -&gt; markdown and hOCR -&gt; markdown.
+Pychanasync provides a channel-based message passing abstraction for asyncio coroutines. With it, you can 
 
-I am working on Kreuzberg v4, which migrates much of it to Rust. This necessitated updating this component as well, which led to a full rewrite in Rust, offering improved performance, memory stability, and a more robust feature set.
+Create buffered and unbuffered channels 
+Send and receive values between coroutines synchronously and asynchronously 
+Use channels as async iterators 
+Use a select-like utility to wait on multiple channel operations.
 
-v2  delivers Rust-backed HTML → Markdown conversion with Python bindings, a CLI and a Rust crate. The rewrite makes this by far the most performance and complete solution for HTML to Markdown conversion in python. Here are some benchmarks:
+It enables seamless and synchronized coroutune communication using structured message passing instead of relying shared state and locks. 
 
-Apple M4 • Real Wikipedia documents • `convert()` (Python)
-
-| Document            | Size  | Latency | Throughput | Docs/sec |
-| ------------------- | ----- | ------- | ---------- | -------- |
-| Lists (Timeline)    | 129KB | 0.62ms  | 208 MB/s   | 1,613    |
-| Tables (Countries)  | 360KB | 2.02ms  | 178 MB/s   | 495      |
-| Mixed (Python wiki) | 656KB | 4.56ms  | 144 MB/s   | 219      |
-
-&gt; V1 averaged ~2.5 MB/s (Python/BeautifulSoup). V2’s Rust engine delivers 60–80x higher throughput.
-
-The Python package still exposes `markdownify`-style calls via `html_to_markdown.v1_compat`, so migrations are relatively straightforward, although the v2 did introduce some breaking changes (see CHANGELOG.md for full details).
-
-## Highlights
-
-Here are the key highlights of the v2 release aside from the massive performance improvements:
-
-- CommonMark-compliant defaults with explicit toggles when you need legacy behaviour.
-- Inline image extraction (`convert_with_inline_images`) that captures data URI assets and inline SVGs with sizing and quota controls.
-- Full hOCR 1.2 spec compliance, including hOCR table reconstruction and YAML frontmatter for metadata to keep OCR output structured.
-- Memory is kept kept in check by dedicated harnesses: repeated conversions stay under 200 MB RSS on multi-megabyte corpora.
-
-## Target Audience
-- Engineers replacing BeautifulSoup-based converters that fall apart on large documents or OCR outputs.
-- Python, Rust, and CLI users who need identical Markdown from libraries, pipelines, and batch tools.
-- Teams building document understanding stacks (including the kreuzberg ecosystem) that rely on tight memory behaviour and parallel throughput.
-- OCR specialists who need to process hOCR efficiently.
-
-## Comparison to Alternatives
-- [`markdownify`](https://github.com/matthewwithanm/python-markdownify): the spiritual ancestor, but still Python + BeautifulSoup. html-to-markdown v2 keeps the API shims while delivering 60–80× more throughput, table-aware hOCR support, and deterministic memory usage across repeated conversions.
-- [`html2text`](https://github.com/Alir3z4/html2text): solid for quick scripts, yet it lacks CommonMark compliance and tends to drift on complex tables and OCR layouts; it also allocates heavily under pressure because it was never built with long-running processes in mind.
-- [`pandoc`](https://github.com/jgm/pandoc): extremely flexible (and amazing!), but large, much slower for pure HTML → Markdown pipelines, and not embeddable in Python without subprocess juggling. html-to-markdown v2 offers a slim Rust core with direct bindings, so you keep the performance while staying in-process.
-
-If you end up using the rewrite, a ⭐️ on the [repo](https://github.com/Goldziher/html-to-markdown) always makes yours truly happy!",0.9,23,0,23
-Python,"I shared 300+ Python Data Science Videos on YouTube (Tutorials, Projects and Full Courses)","Hello, I am sharing free Python Data Science Tutorials for over 2 years on YouTube and I wanted to share my playlists. I believe they are great for learning the field, I am sharing them below. Thanks for reading!
-
-Python Tutorials -&gt; [https://youtube.com/playlist?list=PLTsu3dft3CWgJrlcs\_IO1eif7myukPPKJ&amp;si=fYIz2RLJV1dC6nT5](https://youtube.com/playlist?list=PLTsu3dft3CWgJrlcs_IO1eif7myukPPKJ&amp;si=fYIz2RLJV1dC6nT5)
-
-Data Science Full Courses &amp; Projects: [https://youtube.com/playlist?list=PLTsu3dft3CWiow7L7WrCd27ohlra\_5PGH](https://youtube.com/playlist?list=PLTsu3dft3CWiow7L7WrCd27ohlra_5PGH)
-
-AI Tutorials (LangChain, LLMs &amp; OpenAI API): [https://youtube.com/playlist?list=PLTsu3dft3CWhAAPowINZa5cMZ5elpfrxW](https://youtube.com/playlist?list=PLTsu3dft3CWhAAPowINZa5cMZ5elpfrxW)
-
-Machine Learning Tutorials: [https://youtube.com/playlist?list=PLTsu3dft3CWhSJh3x5T6jqPWTTg2i6jp1](https://youtube.com/playlist?list=PLTsu3dft3CWhSJh3x5T6jqPWTTg2i6jp1)
-
-Deep Learning Tutorials: [https://youtube.com/playlist?list=PLTsu3dft3CWghrjn4PmFZlxVBileBpMjj](https://youtube.com/playlist?list=PLTsu3dft3CWghrjn4PmFZlxVBileBpMjj)
-
-Natural Language Processing Tutorials: [https://youtube.com/playlist?list=PLTsu3dft3CWjYPJi5RCCVAF6DxE28LoKD](https://youtube.com/playlist?list=PLTsu3dft3CWjYPJi5RCCVAF6DxE28LoKD)
-
-Time Series Analysis Tutorials: [https://youtube.com/playlist?list=PLTsu3dft3CWibrBga4nKVEl5NELXnZ402](https://youtube.com/playlist?list=PLTsu3dft3CWibrBga4nKVEl5NELXnZ402)
-
-Streamlit Based Python Web App Development Tutorials: [https://youtube.com/playlist?list=PLTsu3dft3CWhBViLMhL0Aqb75rkSz\_CL-](https://youtube.com/playlist?list=PLTsu3dft3CWhBViLMhL0Aqb75rkSz_CL-)
-
-Data Cleaning Tutorials: [https://youtube.com/playlist?list=PLTsu3dft3CWhOUPyXdLw8DGy\_1l2oK1yy](https://youtube.com/playlist?list=PLTsu3dft3CWhOUPyXdLw8DGy_1l2oK1yy)
-
-Data Analysis Tutorials: [https://youtube.com/playlist?list=PLTsu3dft3CWhwPJcaAc-k6a8vAqBx2\_0t](https://youtube.com/playlist?list=PLTsu3dft3CWhwPJcaAc-k6a8vAqBx2_0t)
-
-End-to-End Data Science Projects: [https://youtube.com/playlist?list=PLTsu3dft3CWg69zbIVUQtFSRx\_UV80OOg](https://youtube.com/playlist?list=PLTsu3dft3CWg69zbIVUQtFSRx_UV80OOg)",0.81,19,0,19
-Python,Feedback Request for API Key Management Library for FastAPI,"Hello,
-
-In my work, I build many FastAPI applications, both internal and external, that expose endpoints to other product, business, and data teams, accessible via API keys. Each project eventually ended up with its own slightly different API key system, so I finally took the time to extract the common parts and combine them into a reusable library.
-
-[https://github.com/Athroniaeth/fastapi-api-key](https://github.com/Athroniaeth/fastapi-api-key)
-
-Before publishing it publicly (not yet on PyPI, and the mkdocs documentation is still local), I’d like to get feedback from people who have solved similar problems (or just see what they think).
-
-The goal is to see if I can improve this project or if there are any major security flaws (which would be problematic for an API key system).
-
-I built the library as follows:
-
-* **Security-first**: secrets are hashed with a salt and a pepper, and never logged or returned after creation
-* **Easy-to-use**: just inherited from the repository and use service
-* **Prod-ready**: services and repositories are async, and battle-tested
-* **Agnostic hasher**: you can use any async-compatible hashing strategy (default: Argon2)
-* **Agnostic backend**: you can use any async-compatible database (default: SQLAlchemy)
-* **Factory**: create a Typer, FastAPI router wired to api key systems (only SQLAlchemy for now)
-
-**I’d love feedback on (but not limited to) the following:**
-
-* Are there features you would expect that don’t exist?
-* Does the SQLAlchemy Mixin approach seem good for handling custom field extensions?
-* Do you see any potential flaws with the current hashing/peppering strategy?
-* What do you think about the extras/packaging approach (“core”, “fastapi”, “all”)?
-
-Is there anything else I should add to make it more usable? If you want to browse the code, start with the preliminary README (which includes usage examples). There’s also mkdocs documentation with quickstarts and usage guides.",1.0,16,0,16
-Python,[FOSS] Flint: A 100% Config-Driven ETL Framework,"I'd like to share **Flint**, a configuration-driven ETL framework that lets you define complete data pipelines through JSON/YAML instead of code.
-
-## What My Project Does
-
-Flint transforms straightforward ETL workflows from programming tasks into declarative configuration. Define your sources, transformations (select, filter, join, cast, etc.), and destinations in JSON or YAML - the framework handles execution. The processing engine is abstracted away, currently supporting Apache Spark with Polars in development.
-
-**It's not intended to replace all ETL development** - complex data engineering still needs custom code. Instead, it handles routine ETL tasks so engineers can focus on more interesting problems.
-
-## Target Audience
-- Data engineers tired of writing boilerplate for basic pipelines, so they ahve more time for more interesting programming tasks than straightforward ETL pipelines.
-- Teams wanting standardized ETL patterns
-- Organizations needing pipeline logic accessible to non-developers
-- Projects requiring multi-engine flexibility
-
-100% test coverage (unit + e2e), strong typing, extensive documentation with class and activity diagrams, and configurable alerts/hooks.
-
-## Comparison
-
-Unlike other transformation tools like DBT this one is configuration focused to reduce complexity and programming knowledge to make the boring ETL task simple, to keep more time for engineers for more intersting issues. This focuses on pure configuration without vendor lock-in as the backend key can be changed anytime with another implementation.
-
-## Future expansion
-
-The foundation is solid - now looking to expand with new engines, add tracing/metrics, migrate CLI to Click, move from azure devops CICD to github actions, extend Polars transformations, and more.
-
-**[GitHub: config-driven-ETL-framework](https://github.com/krijnvanderburg/config-driven-ETL-framework)**. If you like the project idea then consider giving it a star, it means the world to get a project started from the ground.
-
-```jsonc
-{
-    ""runtime"": {
-        ""id"": ""customer-orders-pipeline"",
-        ""description"": ""ETL pipeline for processing customer orders data"",
-        ""enabled"": true,
-        ""jobs"": [
-            {
-                ""id"": ""silver"",
-                ""description"": ""Combine customer and order source data into a single dataset"",
-                ""enabled"": true,
-                ""engine_type"": ""spark"", // Specifies the processing engine to use
-                ""extracts"": [
-                    {
-                        ""id"": ""extract-customers"",
-                        ""extract_type"": ""file"", // Read from file system
-                        ""data_format"": ""csv"", // CSV input format
-                        ""location"": ""examples/join_select/customers/"", // Source directory
-                        ""method"": ""batch"", // Process all files at once
-                        ""options"": {
-                            ""delimiter"": "","", // CSV delimiter character
-                            ""header"": true, // First row contains column names
-                            ""inferSchema"": false // Use provided schema instead of inferring
-                        },
-                        ""schema"": ""examples/join_select/customers_schema.json"" // Path to schema definition
-                    }
-                ],
-                ""transforms"": [
-                    {
-                        ""id"": ""transform-join-orders"",
-                        ""upstream_id"": ""extract-customers"", // First input dataset from extract stage
-                        ""options"": {},
-                        ""functions"": [
-                            {""function_type"": ""join"", ""arguments"": {""other_upstream_id"": ""extract-orders"", ""on"": [""customer_id""], ""how"": ""inner""}},
-                            {""function_type"": ""select"", ""arguments"": {""columns"": [""name"", ""email"", ""signup_date"", ""order_id"", ""order_date"", ""amount""]}}
-                        ]
-                    }
-                ],
-                ""loads"": [
-                    {
-                        ""id"": ""load-customer-orders"",
-                        ""upstream_id"": ""transform-join-orders"", // Input dataset for this load
-                        ""load_type"": ""file"", // Write to file system
-                        ""data_format"": ""csv"", // Output as CSV
-                        ""location"": ""examples/join_select/output"", // Output directory
-                        ""method"": ""batch"", // Write all data at once
-                        ""mode"": ""overwrite"", // Replace existing files if any
-                        ""options"": {
-                            ""header"": true // Include header row with column names
-                        },
-                        ""schema_export"": """" // No schema export
-                    }
-                ],
-                ""hooks"": {
-                    ""onStart"": [], // Actions to execute before pipeline starts
-                    ""onFailure"": [], // Actions to execute if pipeline fails
-                    ""onSuccess"": [],  // Actions to execute if pipeline succeeds
-                    ""onFinally"": [] // Actions to execute after pipeline completes (success or failure)
-                }
-            }
-        ]
-    }
-}
-```",0.73,5,0,5
-Python,sdax - an API for asyncio for handling parallel tasks declaratively,"Parallel async is fast, but managing failures and cleanup across multiple dependent operations is hard.
-
-sdax - (Structured Declarative Async eXecution) does all the heavy lifting. You just need to write the async functions and wire them into ""levels"".
-
-I'm working on an extension to sdax for doing all the initialization using decorators - coming next.
-
-Requires Python 3.11 or higher since it uses asyncio.TaskGroup and ExceptionGroup which were introduced in 3.11.
-
-See: [https://pypi.org/project/sdax](https://pypi.org/project/sdax/), [https://github.com/owebeeone/sdax](https://github.com/owebeeone/sdax)",0.7,4,0,4
-Python,uv cheatsheet with most common/useful commands,"I've been having lots of fun using Astral's uv and also teaching it to friends and students, so I decided to create a cheatsheet with the most common/useful commands.
-
-[uv cheatsheet with most common/useful commands](https://mathspp.com/blog/uv-cheatsheet)
-
-I included sections about
-
- - project creation;
- - dependency management;
- - project lifecycle &amp; versioning;
- - installing/working with tools;
- - working with scripts;
- - uv's interface for `pip` and `venv`; and
- - some meta &amp; miscellaneous commands.
-
-The link above takes you to a page with all these sections as regular tables and to high-resolution/print-quality downloadable files you can  get for yourself from the link above.
-
-I hope this is helpful for you and if you have any feedback, I'm all ears!",0.97,324,0,324
-Python,How much Python do I really need to know to land my first dev job?,"Hey everyone,
-I’ve been working as a Data Analyst at an energy distribution company for about a year and a half. My long-term goal has always been to build the skills needed to transition into a developer role.
-I feel like it’s finally time to sharpen my knowledge and make that pivot — but honestly, I still feel like I know nothing, even though I’m a bit of a Swiss Army knife in my current job.
-Here’s a quick overview of what I already know and where I’m at:
-Several Python certificates (Coursera and Cisco).
-Certified and experienced in SQL databases (DDL and DML).
-Comfortable working with Linux systems.
-Process automation experience using PDI Spoon and batch scripts.
-Currently studying Data Analytics and Machine Learning with Python.
-I haven’t worked with APIs or HTTP requests yet, and my English level is low, but I’m improving.
-Where should I focus next? Do I need to go deeper in Python itself, or start learning web frameworks, APIs, or something else to move toward a dev job?",0.61,18,0,18
-Python,Built an automated GitHub-RAG pipeline system with incremental sync,"**What My Project Does**
-
-RAGIT is a fully automated RAG pipeline for GitHub repositories. Upload a repo and it handles collection, preprocessing, embedding, vector indexing, and incremental synchronization automatically. Context is locked to specific commits to avoid version confusion. When you ask questions, hybrid search finds relevant code with citations and answers consistently across multiple files.
 
 **Target Audience**
 
-Production-ready system for development teams working with large codebases. Built with microservices architecture (Gateway-Backend-Worker pattern) using PostgreSQL, Redis, and Milvus. Fully dockerized for easy deployment. Useful for legacy code analysis, project onboarding, and ongoing codebase understanding.
+ Pychanasync is for developers working with asyncio.
+
+If you're doing asynchronous programming in Python or exploring asycio and want a provide some
+structure and synchronization to your program I highly recommend. 
 
 **Comparison**
 
-Unlike manually copying code into ChatGPT/Claude which loses context and version tracking, RAGIT automates the entire pipeline and maintains commit-level consistency. Compared to other RAG frameworks that require manual chunking and indexing, RAGIT handles GitHub repos end-to-end with automatic sync when code changes. More reproducible and consistent than direct LLM usage.
+Pychanasync is heavily inspired by Go’s native channel primitive. It follows its the behaviour semantics and design. 
+",0.83,18,0,18
+Python,Process Memory manipulator in Python. (Windows x64),"I made a useful tool for interacting with process memory based on ctypes and Windows API. It’s for Windows x64. 
 
-Apache 2.0 licensed.
+**What My Project Does**:
 
-GitHub: https://github.com/Gyu-Chul/RAGIT
-Demo: https://www.youtube.com/watch?v=VSBDDvj5_w4
+Helps you interacting with a process.
 
-Open to feedback.",0.43,0,0,0
-Python,UV on termux Debian (android),"Anybody managed to build it? And if so, pretty please with chocolate chips, how? I've made the obvious attempts (pip install, cargo...) but no joy so far.",0.75,2,0,2
-Python,PipeFunc: Build Lightning-Fast Pipelines with Python: DAGs Made Easy,"Hey r/Python!
+1) Writes / Reads bytes to/from a process virtual memory.
 
-I'm excited to share `pipefunc` ([github.com/pipefunc/pipefunc](https://github.com/pipefunc/pipefunc)), a Python library designed to make building and running complex computational workflows incredibly fast and easy. If you've ever dealt with intricate dependencies between functions, struggled with parallelization, or wished for a simpler way to create and manage DAG pipelines, `pipefunc` is here to help.
+2) Writes / Reads int32 to/from a process virtual memory.
 
-**What My Project Does:**
+3) Writes / Reads int64 to/from a process virtual memory.
 
-`pipefunc` empowers you to easily construct **Directed Acyclic Graph (DAG)** pipelines in Python. It handles:
+4) Injects dll (Windows API).
 
-1. **Automatic Dependency Resolution:**  `pipefunc` automatically determines the correct execution order of your functions, eliminating manual dependency management.
-2. **Lightning-Fast Execution:** With minimal overhead (around **10 µs per function call**), `pipefunc` ensures your pipelines run super fast.
-3. **Effortless Parallelization:** `pipefunc` automatically parallelizes independent tasks, whether on your local machine or a SLURM cluster. It supports any `concurrent.futures.Executor`!
-4. **Intuitive Visualization:** Generate interactive graphs to visualize your pipeline's structure and understand data flow.
-5. **Simplified Parameter Sweeps:**  `pipefunc`'s `mapspec` feature lets you easily define and run N-dimensional parameter sweeps, which is perfect for scientific computing, simulations, and hyperparameter tuning.
-6. **Resource Profiling:** Gain insights into your pipeline's performance with detailed CPU, memory, and timing reports.
-7. **Caching:** Avoid redundant computations with multiple caching backends.
-8. **Type Annotation Validation:** Ensures type consistency across your pipeline to catch errors early.
-9. **Error Handling:** Includes an `ErrorSnapshot` feature to capture detailed information about errors, making debugging easier.
+5) Ejects dll.
 
-**Target Audience:**
+6) Finds pattern / sequence of bytes in memory.
 
-`pipefunc` is ideal for:
+7) Gets the final address of the multi-level pointer by a list of offsets.
 
-*   **Scientific Computing:** Streamline simulations, data analysis, and complex computational workflows.
-*   **Machine Learning:** Build robust and reproducible ML pipelines, including data preprocessing, model training, and evaluation.
-*   **Data Engineering:** Create efficient ETL processes with automatic dependency management and parallel execution.
-*   **HPC:** Run `pipefunc` on a SLURM cluster with minimal changes to your code.
-*   **Anyone** working with interconnected functions who wants to improve code organization, performance, and maintainability.
+8) Checks if the dll is in a module list of a process. 
 
-`pipefunc` is designed to be flexible (great tool for prototyping and experimentation) and easy to adopt!
+9) Gets modules (dlls) list. 
 
-**Comparison:**
+10) Allocates memory.
 
-*  **vs. Hamilton:** Hamilton also compiles Python functions into
-DAGs, but it centers on column-level DataFrame engineering, ships modifiers like @with_columns/@extract_columns, and offers built-in data/schema validation plus an optional UI for lineage and observability; pipefunc leans toward low-overhead scientific/HPC pipelines, executor-agnostic parallelism, and N-D sweeps via mapspecs.
-*   **vs. Dask:** `pipefunc` offers a higher-level, more declarative way to define pipelines. It automatically manages task scheduling and execution based on your function definitions and `mapspec`s, without requiring you to write explicit parallel code.
-*   **vs. Luigi/Airflow/Prefect/Kedro:** While those tools excel at ETL and event-driven workflows, `pipefunc` focuses on scientific computing, simulations, and computational workflows where fine-grained control over execution and resource allocation is crucial. Also, it's way easier to setup and develop with, with minimal dependencies!
-*   **vs. Pandas:** You can easily combine `pipefunc` with `Pandas`! Use `pipefunc` to manage the execution of `Pandas` operations and parallelize your data processing pipelines. But it also works well with `Polars`, `Xarray`, and other libraries!
-*   **vs. Joblib:** `pipefunc` offers several advantages over `Joblib`. `pipefunc` automatically determines the execution order of your functions, generates interactive visualizations of your pipeline, profiles resource usage, and supports multiple caching backends. Also, `pipefunc` allows you to specify the mapping between inputs and outputs using `mapspec`s, which enables complex map-reduce operations.
+It is also highly recommended to use it with “with Process() as” block, so it safer. If not, you should clear all allocations via allocate() method with free_allocates().
 
-**Examples:**
+**Target Audience**:
 
-**Simple Example:**
+Researchers and developers interested in Windows programming. 
 
-```python
-from pipefunc import pipefunc, Pipeline
+**Comparison**:
 
-@pipefunc(output_name=""c"")
-def add(a, b):
-    return a + b
+PyMem and other modules like pywin32 always lack functions that are provided here. The code is also very safe in terms of closing handles. Which is very important.
 
-@pipefunc(output_name=""d"")
-def multiply(b, c):
-    return b * c
+[github](https://github.com/fluxdeken/ProcMemPy/)",0.83,17,0,17
+Python,Heap/Priority Queue that supports removing arbitrary items and frequency tracking,"I created a Python heap implementation that supports:
+- Removing any item (not just the root via pop)
+- Tracking the frequency of items so that duplicates are handled efficiently
 
-pipeline = Pipeline([add, multiply])
-result = pipeline(""d"", a=2, b=3)  # Automatically executes 'add' first
-print(result)  # Output: 15
+**Source**: [https://github.com/Ite-O/python-indexed-heap](https://github.com/Ite-O/python-indexed-heap)  
+**PyPI**: [https://pypi.org/project/indexedheap/](https://pypi.org/project/indexedheap/)
 
-pipeline.visualize() # Visualize the pipeline
+## What My Project Does
+`indexedheap` is a Python package that provides standard heap operations, insert (push), pop, and peek, along with additional features:
+
+- Remove any arbitrary item efficiently.
+- Track frequencies of items to handle duplicates.
+- Insert or remove multiple occurrences in a single operation.
+- Iterate over heap contents in sorted order without modifying the heap.
+
+It is designed for scenarios requiring dynamic priority queues, where an item’s priority may change over time Common in task schedulers, caching systems or pathfinding algorithms.
+
+## Target Audience
+- Developers needing dynamic priority queues where priorities can increase or decrease.
+- Users who want duplicate-aware heaps for frequency tracking.
+- Engineers implementing task schedulers, caches, simulations or pathfinding algorithms in Python.
+
+## Comparison
+### Python’s built-in `heapq` vs `indexedheap`
+
+| Operation | Description | `heapq` | `indexedheap` |
+|------------|--------------|---------|----------------|
+| `heappush(heap, item)` / `insert(item)` | Add an item to the heap | ✅ `O(log N)` | ✅ `O(log N)` / *(`O(1)` if item already exists and count is incremented)* |
+| `heappop(heap)` / `pop()`| Remove and return the root item | ✅ `O(log N)` | ✅ `O(log N)` |
+| `heap[0]` / `peek()` | Return root item without removing it | ✅ Manual (`heap[0]`) | ✅ `O(1)` |
+| `remove(item)` | Remove any arbitrary item | ❌ Not supported | ✅ `O(log(N))` for last occurence in heap, `O(1)` if only decrementing frequency |
+| `heappushpop(heap, item)` | Push then pop in a single operation | ✅ `O(log N)` | ❌ Not directly supported *(use `insert()` + `pop()`)* |
+| `heapreplace(heap, item)` | Pop then push in a single operation | ✅ `O(log N)` | ❌ Not directly supported *(use `pop()` + `insert()`)* |
+| `count(item)` | Get frequency of a specific item | ❌ Not supported | ✅ `O(1)` |
+| `item in heap` | Membership check | ⚠️ `O(N)` (linear scan) |✅ `O(1)` |
+| `len(heap)` | Number of elements | ✅ `O(1)` | ✅ `O(1)` |
+| `to_sorted_list()` | Return sorted elements without modifying heap | ✅ Requires creating a sorted copy of the heap `O(N log N)` | ✅ `O(N log N)` |
+| `iter(heap)` | Iterate in sorted order | ✅ Requires creating a sorted copy of the heap and iterating over the copy `O(N log N)`) | ✅ `O(N log N)` |
+| `heapify(list)` / `MinHeap(list), MaxHeap(list)` | Convert list to valid heap | ✅ `O(N)` | ✅ `O(N)` |
+| `heap1 == heap2` | Structural equality check | ✅ `O(N)` |  ✅ `O(N)` |
+| `Frequency tracking` | Track frequency of items rather than store duplicates | ❌ Not supported | ✅ Yes |
+| `Multi-inserts/removals` | Insert/ remove multiples of an item in a single operation |❌ Not supported | ✅ Yes (see insert/ remove rows for time complexity) |
+
+---
+
+ ## Installation
+
+```bash
+pip install indexedheap
 ```
 
-**Parallel Example with `mapspec`:**
+## Feedback
+If there is demand, I am considering adding support for `heappushpop` and `heapreplace` operations, similar to those in Python's `heapq` module.
 
-Parallelizes for all combinations of inputs `a` and `b` automatically!
+Open to any feedback!
+",0.86,5,0,5
+Python,T-Strings: Python's Fifth String Formatting Technique?,"Every time I've talked about Python 3.14's new t-strings online, many folks have been confused about how t-strings are different from f-strings, why t-strings are useful, and whether t-strings are a replacement for f-strings.
 
-```python
-import numpy as np
-from pipefunc import pipefunc, Pipeline
-from pipefunc.map import load_outputs
+  
+I published [a short article (and video) on Python 3.14's new t-strings](https://pym.dev/t-strings-in-python/) that's meant to explain this.
 
-@pipefunc(output_name=""c"", mapspec=""a[i], b[j] -&gt; c[i, j]"")
-def f(a: int, b: int):
-    return a + b
+The TL;DR:
 
-@pipefunc(output_name=""mean"") # no mapspec, so receives 2D `c[:, :]`
-def g(c: np.ndarray):
-    return np.mean(c)
+* Python has had 4 string formatting approaches before t-strings
+* T-strings are different because they *don't actually return strings*
+* T-strings are useful for library authors who need the disassembled parts of a string interpolation for the purpose of pre-processing interpolations
+* T-strings definitely do not replace f-strings: keep using f-strings until specific libraries tell you to use a t-string with one or more of their utilities
 
-pipeline = Pipeline([f, g])
-inputs = {""a"": [1, 2, 3], ""b"": [4, 5, 6]}
-result_dict = pipeline.map(inputs, run_folder=""my_run_folder"", parallel=True)
-result = load_outputs(""mean"", run_folder=""my_run_folder"") # can load now too
-print(result)  # Output: 7.0
-```
+Watch the video or read the article for a short demo and a library that uses them as well.
 
-**Getting Started:**
+If you've been confusing about t-strings, I hope this explanation helps.",0.91,202,0,202
+Python,FastAPI Preset - A beginner-friendly starter template for personal projects,"**Hey everyone!👋** Wanted to share a FastAPI preset I created for my personal side projects.
 
-*   **Docs:** [https://pipefunc.readthedocs.io/](https://pipefunc.readthedocs.io/)
-*   **Source:** [https://github.com/pipefunc/pipefunc](https://github.com/pipefunc/pipefunc)
 
-I'm exctited to hear your feedback and answer any questions you have. Give `pipefunc` a try and let me know how it can improve your workflows!
-",0.95,42,0,42
-Python,SPDL - Scalable and Performant Data Loading,"Hi Python community,
 
-Inspired by recent showcases on pipeline libraries ([Pipevine](https://www.reddit.com/r/Python/comments/1o2n119/ergonomic_concurrency/), [pipefunc](https://www.reddit.com/r/Python/comments/1o3323m/pipefunc_build_lightningfast_pipelines_with/)), I’d like to share my project: **SPDL (Scalable and Performant Data Loading)**. 
+Taking a break from my main project and decided to clean up and share a FastAPI preset I've been using for my personal side projects.
+
+Just to be clear - I'm not a professional developer (but I try to find job now lol) and this isn't claiming to be the ""perfect"" architecture, but I've tried to make it as clear and simple as possible.
+
+  
+**What My Project Does**
+
+This FastAPI Preset is a ready-to-use template that provides essential backend functionality out of the box. It includes:
+
+* **JWT Authentication** \- Complete user registration/login system with secure password hashing
+* **Database Management** \- Supports both SQLite (development) and PostgreSQL (production) with Alembic migrations
+* **CRUD Operations** \- User and item management with ownership-based permissions
+* **Auto Documentation** \- Automatic Swagger UI generation at `/docs`
+* **Structured Architecture** \- Clean separation of concerns with DAO pattern and repository layer
+
+The project is heavily documented with clear comments in every file, making it easy to understand and modify.  
+
+
+**Target Audience**
+
+This template is primarily designed for:
+
+* **Beginners learning FastAPI** \- The detailed comments and straightforward structure make it perfect for understanding how FastAPI works
+* **Personal projects &amp; prototypes** \- Skip the boilerplate and start building features immediately
+* **Students &amp; hobbyists** \- Great for educational purposes and side projects
+* **Junior developers** \- Provides a solid foundation without overwhelming complexity
+
+**Note:** This is a personal project template, not an enterprise-grade solution. It's perfect for learning and small-to-medium personal projects.  
+
+
+**Quick Overview**
+
+**Authentication:**
+
+* JWT-based login/registration
+* Secure password hashing with bcrypt
+* Protected routes with user context
+
+**Database:**
+
+* SQLite (development) &amp; PostgreSQL (production)
+* Alembic migrations
+* Async SQLAlchemy 2.0
+
+**Setup is simple:**
+
+1. Configure `.env` file
+2. Set up database in `database.py`
+3. Configure Alembic in `alembic.ini`
+
+**Check it out:** [https://github.com/Iwlj4s/FastAPIPreset](https://github.com/Iwlj4s/FastAPIPreset)
+
+I built this for my personal projects and decided to share it while taking a break from my main work. Not claiming perfect architecture - just something that works and is easy to understand!
+
+Would love feedback and suggestions!",0.73,7,0,7
+Python,You need some advanced decorator patterns,"Most developers know the basics of decorators — like `staticmethod` or `lru_cache`.  
+But once you go beyond these, decorators can become *powerful building blocks* for clean, reusable, and elegant code.
+
+In my latest [blog](https://medium.com/techtofreedom/10-advanced-python-decorator-patterns-for-clean-and-efficient-code-6d4ac670b26e?sk=23d2e31c38c382808b37753460e1371b), I explored **10 advanced decorator patterns** that go beyond the usual tutorials.
+
+Here’s a quick summary of what’s inside:
+
+# 1️⃣ TTL-Based Caching
+
+Forget `lru_cache` that keeps results forever.  
+A **time-to-live cache** decorator lets your cache entries expire after a set duration — perfect for APIs and temporary data.
+
+# 2️⃣ Retry on Failure
+
+Wrap any unstable I/O call (like a flaky API) and let the decorator handle retries with delay logic automatically.
+
+# 3️⃣ Execution Time Tracker
+
+Measure function performance in milliseconds without modifying your core logic.
+
+# 4️⃣ Role-Based Access Control
+
+Add lightweight user permission checks (`@require_role(""admin"")`) without touching your business code.
+
+# 5️⃣ Simple Logging Decorator
+
+A minimal yet powerful pattern to track every call and return value — no need for heavy logging frameworks.
+
+# 6️⃣ Dependency Injection Decorator
+
+Inject services (like `logger` or `validator`) into your functions globally — no need for long argument lists.
+
+# 7️⃣ Class-Wide Decorator
+
+Decorate *all* methods of a class in one shot. Useful for timing, logging, or enforcing constraints project-wide.
+
+# 8️⃣ Singleton Factory
+
+Implement the singleton pattern with a one-liner decorator — ideal for configurations or resource-heavy classes.
+
+# 9️⃣ Rate Limiter
+
+Throttle function calls to avoid API abuse or user spamming — essential for stable production systems.
+
+# 🔟 Context Management Decorator
+
+Propagate request IDs, user contexts, or session data automatically across threads and async tasks.
+
+💬 **Would love to know:**  
+What’s your favorite use case for decorators in production code?",0.29,0,0,0
+Python,Converter PNG e JPG para WEBP com Python (Script Completo) 2025,"Converter imagens tradicionais como PNG e JPG para o formato WEBP de forma simples e prática usando Python!  
+Neste tutorial, você vai ver o passo a passo utilizando as bibliotecas Pillow e Watchdog, automatizando o processo de conversão e deixando tudo mais produtivo.  
+[https://youtu.be/9XeEWi39bFY](https://youtu.be/9XeEWi39bFY)",0.11,0,0,0
+Python,Python Pest - A port of Rust's pest,"I recently released Python Pest, a port of the Rust pest parsing library.
 
 # What My Project Does
 
-SPDL is designed to address the data loading bottleneck in machine learning (ML) and AI training pipelines. You break down data loading into discrete tasks with different constraints (network, CPU, GPU transfer etc) and construct a pipeline, and SPDL executes them efficiently. It features a task execution engine (pipeline abstraction) built on asyncio, alongside an independent I/O module for media processing. 
+Python Pest is a declarative PEG parser generator for Python, ported from Rust's Pest. You write grammars instead of hand-coding parsing logic, and it builds parse trees automatically.
 
-# Resources:
+Define a grammar using Pest version 2 syntax, like this:
 
-* **Repo:** [https://github.com/facebookresearch/spdl](https://github.com/facebookresearch/spdl)
-* **Documentation:** [SPDL Docs](https://facebookresearch.github.io/spdl/main/)
-* **PyPI:**
-   * Install with `pip install spdl`
-      * [spdl-core](https://pypi.org/project/spdl-core/) (no dependency)
-      * [spdl-io](https://pypi.org/project/spdl-io/) (requires NumPy, and optionally PyTorch / Numba / Jax) 
-* **arXiv:** [2504.20067](https://arxiv.org/abs/2504.20067)
+    jsonpath        = _{ SOI ~ jsonpath_query ~ EOI }
+    jsonpath_query  = _{ root_identifier ~ segments }
+    segments        = _{ (S ~ segment)* }
+    root_identifier = _{ ""$"" }
+    
+    segment = _{
+      | child_segment
+      | descendant_segment
+    }
+    
+    // snip
+
+And traverse parse trees using [structural pattern matching](https://peps.python.org/pep-0636/), like this:
+
+    def parse_segment(self, segment: Pair) -&gt; Segment:
+        match segment:
+            case Pair(Rule.CHILD_SEGMENT, [inner]):
+                return ChildSegment(segment, self.parse_segment_inner(inner))
+            case Pair(Rule.DESCENDANT_SEGMENT, [inner]):
+                return RecursiveDescentSegment(segment, self.parse_segment_inner(inner))
+            case Pair(Rule.NAME_SEGMENT, [inner]) | Pair(Rule.INDEX_SEGMENT, [inner]):
+                return ChildSegment(segment, [self.parse_selector(inner)])
+            case _:
+                raise JSONPathSyntaxError(""expected a segment"", segment)
+
+See [docs](https://jg-rp.github.io/python-pest/), [GitHub](https://github.com/jg-rp/python-pest) and [PyPi](https://pypi.org/project/python-pest/) for a complete example.
 
 # Target Audience
 
-ML practitioners whose focus is model training rather than software engineering. It is production-ready.
-
-# Core Principles
-
-* **High Throughput &amp; Efficiency:** SPDL maximizes data loading speed and minimizes CPU/memory overhead to keep GPUs busy.
-* **Flexibility:** The pipeline abstraction is highly customizable, allowing users to tailor the structure to their environment, data, and requirements.
-* **Observability:** SPDL provides runtime statistics for each pipeline component, helping users identify bottlenecks and optimize performance.
-* **Intuitive Construction:** Pipelines are easy to build and reason about, with clear separation of stages and bounding factors.
-
-# Architecture Overview
-
-* **Pipeline Abstraction:** With SPDL, you break down data loading into discrete tasks with different constraints (network, CPU, GPU transfer etc) and construct a pipeline that executes each task concurrently.
-* **Multi-threading &amp; Multi-processing:** SPDL uses multi-threading by default for parallelism, with optional multi-processing for workloads that benefit from process isolation. In production, we’ve successfully used multi-threading with Python 3.10 by composing functions that release the GIL. Support for InterpreterPoolExecutor in Python 3.14 is planned.
-* **Async Event Loop:** The task execution engine is built on an async event loop, supporting both async and regular functions.
-* **Media I/O Module:** Includes a high-performance I/O module for audio, video, and image processing, designed from scratch for maximum throughput. It also supports loading NumPy array fast from memory.
-* **Non-invasive:** SPDL orchestrates the execution of given functions, and the only requirement for the function is that it is univariate function. No requirements to change your algorithms/business logic to pipelining it with SPDL.
-
-# Monitoring &amp; Optimization
-
-SPDL exports detailed runtime statistics for each pipeline stage, making it easy to monitor throughput, resource usage, and identify bottlenecks. For more on production bottleneck analysis, see the [Optimization Guide](https://l.facebook.com/l.php?u=https%3A%2F%2Ffacebookresearch.github.io%2Fspdl%2Fmain%2Foptimization_guide%2Fanalysis.html&amp;h=AT3Hi60CVKm_FzR6YfXpfbCm4kDWAVz5144UjUlM7PbqiIaM-7yzNqESVRJqwnHieAIYd_BoPn5GkG8-t66ZfmbEbyS3hyMsNXu-CqwngZ5FVw1ZdbXwhRVG1xYKrE4d81n7m4rYPBbi2XQBwy898DT9nWE).
+* Python developers who need to parse custom languages, data formats, or DSLs.
+* Anyone interested in grammar-first design over hand-coded parsers.
+* Developers curious about leveraging Python's match/case for tree-walking.
 
 # Comparison
 
-* Unlike previously shared projects, the feature set is more specific to ML efficiency. (though the pipeline abstraction is generic, and library is agnostic to ML framework)
-* Supports single chain pipelining with different concurrency. Merging pipeline is also supported but not branching or general graph structure.",0.77,11,0,11
-Python,EPUBLib - New python library for creating and editing EPUB3 files,"I wrote a python library to edit and create EPUB3 files.
+Parsimonious is another general purpose, pure Python parser package that reads parsing expression grammars. Python Pest differs in grammar syntax and subsequent tree traversal technique, preferring external iteration of parse trees instead of defining a visitor.
 
-* Repository: [gitlab.com/joaoseckler/epublib](http://gitlab.com/joaoseckler/epublib)
-* PyPi: [pypi.org/project/epublib/](http://pypi.org/project/epublib/)
-* Documentation: [epub-lib.readthedocs.io/en/latest/](http://epub-lib.readthedocs.io/en/latest/)
+# Feedback
 
-Any suggestions and criticisms are welcome! And if you know any other places where people might be interested in this tool, please let me know.
+I'd appreciate any feedback, especially your thoughts on the trade-off between declarative grammars and performance in Python. Does the clarity and maintainability make up for slower execution compared to hand-tuned parsers?
 
-**What My Project Does:**
+GitHub: [https://github.com/jg-rp/python-pest](https://github.com/jg-rp/python-pest)",0.75,7,0,7
+Python,New UV Gitlab Component,"I tried today to recreate a GitHub action which provides a python \`uv setup as a GitLab CI component.
 
-It is a library for creating and editing EPUB documents according to the EPUB3 specification. Example from the [documentation](https://epub-lib.readthedocs.io/en/latest/index.html#basic-usage):
+# What this Component achieves
 
-    from epublib import EPUB
+While the documentation of UV already explains how to implement `uv` inside of GitLab CI, it still fills the `.gitlab-ci.yml` quite a bit.
+
+My Component tries to minimize that, by also providing a lot of customizations.
+
+# Examples
+
+The following example demonstrates how to implement the component on gitlab.com:
+
+    include:
+      - component: $CI_SERVER_FQDN/gitlab-uv-templates/python-uv-component/python-uv@1.0.0
     
-    with EPUB(""book.epub"") as book:
-        book.metadata.title = ""New title""
+    single-test:
+      extends: .python-uv-setup
+      stage: test
+      script:
+        - uv run python -c ""print('Hello UV!')""
+
+The next examples demonstrate how to achieve parallel matrix execution:
+
+    include:
+      - component: $CI_SERVER_FQDN/gitlab-uv-templates/python-uv-component/python-uv@1.0.0
+        inputs:
+          python_version: $PYTHON_V
+          uv_version: 0.9.4
+          base_layer: bookworm-slim
     
-        for doc in book.documents:
-            new_script = doc.soup.new_tag(""script"", attrs={""src"": ""../Misc/myscript.js""})
-            doc.soup.head.append(new_script)
+    matrix-test:
+      extends: .python-uv-setup
+      stage: test
+      parallel:
+        matrix:
+          - PYTHON_V: [""3.12"", ""3.11"", ""3.10""]
+      script:
+        - uv run python --version""
+      variables:
+        PYTHON_V: $PYTHON_V
+
+# Comparison
+
+I am not aware of any public component which achieves similar as demonstrated above.
+
+I am quite happy about the current result, which I published via the GitLab CI/CD catalogue:
+
+[https://gitlab.com/explore/catalog/gitlab-uv-templates/python-uv-component](https://gitlab.com/explore/catalog/gitlab-uv-templates/python-uv-component)",0.73,5,0,5
+Python,I created a Riot API library for python,"Hello all,
+
+I've been working on a super simple api wrapper for league of legends and would love some feedback.
+
+[https://github.com/diodemusic/pyke](https://github.com/diodemusic/pyke)
+
+Thanks :)",0.67,4,0,4
+Python,"GUI Toolkit Slint 1.14 released with universal transforms, asyncio and a unified text engine","We’re proud to release [\#Slint](https://chat.slint.dev/public/channels/docs-internal#) 1.14 💙 with universal transforms 🌀, [\#Python](https://chat.slint.dev/public/channels/docs-internal#) asyncio 🐍, and a unified text engine with fontique and parley 🖋️  
+Read more about it in the blog here 👉 [https://slint.dev/blog/slint-1.14-released](https://slint.dev/blog/slint-1.14-released)    
+  
+",0.65,5,0,5
+Python,IDS Project in Python,"Hello everyone,
+
+
+
+I recently uploaded a repository to GitHub where I created an IDS in Python. I would appreciate any feedback and suggestions for improvement.
+
+[https://github.com/javisys/IDS-Python](https://github.com/javisys/IDS-Python)
+
+Thank you very much, best regards.",0.63,2,0,2
+Python,I built a Persistent KV Store in Pure Python,"Hi everyone!
+
+ I'm a final year CS student and I've been reading about data storage and storage engines. This is a passion project that I've been working on for the past few months. It is a lightweight, persistent key-value storage engine in Python, built from scratch to understand and implement the Log-Structured Merge-tree (LSM-tree) architecture. The project, which is fully open-source, is explicitly optimized for write-heavy workloads. 
+
+
+
+# Core Architecture:
+
+The engine implements the three fundamental LSM components: the **Write Ahead Log (WAL)** for durability, an in-memory **Memtable** (using `SortedDict` for sorted writes), and immutable persistent **SSTables (Sorted String Tables)**.
+
+Some features that I'm proud of:
+
+* **Async Compaction**: Merging and compaction are handled by a **separate background worker thread**. The process itself takes a hybrid approach.
+* **Client/Server Model**: The entire storage engine runs behind a **FastAPI server**. This allows multiple clients to connect via REST APIs or the included CLI tool.
+* **Efficient Range Queries**: Added full support for range queries from `start_key` to `end_key`. This is achieved via a memory-efficient **k-way merge iterator** that combines results from the Memtable and all SSTables. The FastAPI server delivers the results using a `StreamingResponse` to prevent memory exhaustion for large result sets.
+* **Bloom Filter**: Implemented a **Bloom Filter** for each SSTable to drastically reduce disk I/O by confirming that a key definitely does not exist before attempting a disk seek.
+* **Binary Storage**: SSTables now use **Msgpack binary format** instead of JSON for smaller file sizes and reduced CPU load during serialization/deserialization.
+
+My favourite part of the project is that I actually got to see a practical implementation of [Merge Sorted Arrays - GeeksforGeeks](https://www.geeksforgeeks.org/dsa/merge-k-sorted-arrays/). This is a pretty popular interview question and to see DSA being actually implemented is a crazy moment.
+
+# Get Started
+
+    pip install lsm_storage_engine_key_value_store
+
+**Usage via CLI/Server:**
+
+1. **Terminal 1 (Server):** `lsm-server`
+2. **Terminal 2 (Client):** `lsm-cli` (Follow the CLI help for commands).
+
+# Looking for Feedback
+
+I'd love to hear your thoughts about this implementation and how I can make it better and what features I can add in later versions. Ideas and constructive criticism are always welcome. I'm also looking for contributors, if anyone is interested, please feel free to PM and we can discuss.
+
+Repo link: [Shashank1985/storage-engine](https://github.com/Shashank1985/storage-engine)  
+Thanks!!",0.9,90,0,90
+Python,"NGXSMK GameNet Optimizer: A Python-Powered, Privacy-First System and Network Optimization","I'm excited to share **NGXSMK GameNet Optimizer**, a comprehensive, open-source tool written primarily in **Python** designed to enhance system and network performance for gamers.
+
+While the primary use case is gaming, the core is a set of Python modules for process management, network analysis, and system configuration, making it a great example of Python for low-level system interaction on Windows/Linux.
+
+# What My Project Does
+
+NGXSMK GameNet Optimizer is a utility suite that addresses common performance bottlenecks by providing:
+
+* **Network Optimization:** Uses a Python module to analyze and test latency to various global servers (especially for games like League of Legends) and includes a traffic shaper to prioritize gaming packets (QoS).
+* **System Performance:** Manages system resources by setting high process priority for games, cleaning up unnecessary background applications, and optimizing RAM usage in real-time.
+* **System-Agnostic Core:** The majority of the logic is contained in cross-platform Python scripts (`main.py`, `modules/`), with platform-specific commands handled by batch/shell scripts (`run.bat`, `run.sh`).
+
+Target Audience
+
+This tool is primarily for **PC Gamers** who are performance-conscious and want a free, transparent alternative to commercial ""game booster"" software.
+
+From a development perspective, the **Target Audience** also includes **Python developers** interested in:
+
+* Python for **system programming** (e.g., process and memory management on Windows/Linux).
+* Building **cross-platform utility applications** with a Python backend.
+
+This is meant to be a **production-ready utility** that is robust and reliable for daily use.
+
+# Comparison
+
+NGXSMK GameNet Optimizer differentiates itself from existing optimization software in two key areas:
+
+|| || |**Feature**|**NGXSMK GameNet Optimizer**|**Commercial Alternatives (e.g., Razer Cortex)| |Source Code**|**100% Open Source (MIT Licensed)|Closed Source| |Data/Telemetry**|**Privacy-First (No Telemetry, All Local)|Often collect usage data| |Customization**|Python-based modules are easily auditable and modifiable.|Configuration limited to the provided UI.| |**Core Function**|Focuses on Network Quality, FPS, and RAM.|Varies, often focuses heavily on simple process termination.|
+
+You can find the full source code and installation steps on GitHub:
+
+[**GitHub Repository: toozuuu/ngxsmk-gamenet-optimizer**](https://github.com/toozuuu/ngxsmk-gamenet-optimizer)
+
+**Public Release:** [**https://github.com/toozuuu/ngxsmk-gamenet-optimizer/releases**](https://github.com/toozuuu/ngxsmk-gamenet-optimizer/releases)
+
+Feel free to check out the code and provide any feedback, particularly on the Python modules for system-level operations!",0.87,12,0,12
+Python,Advice for a Javascript/Typescript dev getting into the python ecosystem,"I'm a typescript dev that worked with frontend frameworks and nodejs for the last 10 years.
+
+I just joined a startup and I'm required to build a serverless rest api with a python based stack.
+
+The problem is that I have around a few days to figure out what's considered industry standard currently for the python ecosystem, and I can't afford to take any wrong turns here.
+
+Of course the particularities of the project might affect your answer to some degree and I'm aware of that, but for the sake of trying to point me to the right direction let's try to make the best out of this.
+
+I would make some typescript analogies in order for you to better understand what I'm aiming at with the stack.
+
+1.ORM - drizzle (will use postgres)
+2.Deployment - vercel/fallback to aws lambda
+3.Package manager - pnpm
+4.Types - typescript
+
+The most uncertainities I have are about the platform where I have to deploy this(I really want something that is serverless and has good DX), vercel is such a no brainer rn for typescript projects, and I wonder if I have similar no brainers in python as well.
+
+I have read about modal for deploying FastAPI, but again I'm not sure.
+
+Really appreciate anyone taking time to answer this.
+",0.53,1,0,1
+Python,"Hi introducing python, CLI Tool called evilwaf most powerful firewall bypass V2.2 was released","
+
+
+Now evilwaf supports more than 11 firewall bypass techniques includes 
+
+Critical risk: Direct Exploitation
+  • HTTP Request Smuggling
+  •JWT Algorithm Confusion
+  •HTTP/2 Stream Multiplexing
+  •WebAssembly Memory Corruption
+  •cache poisoning
+  •web cache poisoning
+
+  High risk: Potential Exploitation
+  •SSTI Polyglot Payloads
+  •gRPC/Protobuf Bypass
+  •GraphQL Query Batching
+  °ML WAF Evasion
+
+  Medium risk: Information Gathering
+  ° Subdomain Discovery
+  ° DNS History Bypass
+  ° Header Manipulation
+  ° Advanced Protocol Attacks
+
+For more info visit GitHub repo: https://github.com/matrixleons/evilwaf",0.23,0,0,0
+Python,Is my code horrible,"    import random
     
-            new_heading = doc.soup.new_tag(""h1"", string=""New heading"")
-            doc.soup.body.insert(0, new_heading)
     
-        book.update_manifest_properties()
-        book.write(""book-modified.epub"")
+    wordle_list = [
+        ""APPLE"", ""BRAVE"", ""CRANE"", ""DREAM"", ""FLUTE"", ""GRACE"", ""HOUSE"", ""JUMPS"",
+        ""KNIFE"", ""LIGHT"", ""MOUSE"", ""NIGHT"", ""OCEAN"", ""PLANT"", ""QUICK"", ""ROBIN"",
+        ""SHINE"", ""TIGER"", ""UNITY"", ""VIVID"", ""WORST"", ""YOUTH"", ""ZEBRA"", ""ALARM"",
+        ""BREAD"", ""CLOUD"", ""DRIVE"", ""FROST"", ""GLASS"", ""HEART"", ""INDEX"", ""JUICE"",
+        ""KNOCK"", ""LEMON"", ""MAGIC"", ""NOBLE"", ""OPERA"", ""PEACH"", ""QUEST"", ""RIVER"",
+        ""SHEET"", ""TREND"", ""UNDER"", ""VIRUS"", ""WAGON"", ""YEAST"", ""ZONAL"", ""ANGEL"",
+        ""BASIC"", ""CHAIR"", ""DELTA"", ""FANCY"", ""GIANT"", ""HONEY"", ""IMAGE"", ""JOLLY"",
+        ""KINGS"", ""LEAFY"", ""MIRTH"", ""NOVEL"", ""ORBIT"", ""PRIZE"", ""QUILT"", ""RANGE"",
+        ""SUGAR"", ""TRAIL"", ""URBAN"", ""VOTER"", ""WORRY"", ""YACHT"", ""ZESTY"", ""ADULT"",
+        ""BLEND"", ""CROWN"", ""DEPTH"", ""FAITH"", ""GRAND"", ""HUMAN"", ""INPUT"", ""JOKER"",
+        ""KNEEL"", ""LUNCH"", ""MOTOR"", ""NURSE"", ""OFFER"", ""PILOT"", ""QUIET"", ""REACH"",
+        ""SHARE"", ""THINK"", ""UPPER"", ""VOICE"", ""WASTE"", ""YIELD"", ""ZONED"", ""ABOVE"",
+        ""BIRTH"", ""CABLE"", ""DEMON"", ""FLOOD""
+    ]
+    total_words = len(wordle_list) - 1
+    score = 0
+    number = random.randint(0, total_words)
+    choice = wordle_list[number]
+    
+    
+    for i in range(10):
+        number = random.randint(0, total_words)
+        choice = wordle_list[number]
+        for i in range(10):
+         # Automatically puta the input in uppercase
+            raw_guess = input(""guess the word: "")
+            guess = raw_guess.upper()
+            print(""Your guess is"", guess)
+    
+    
+    # Checks if the guess is five letters
+            if len(guess) == 5:
+                if str(choice) == str(guess):
+                    print(guess[0], ""is correct"")
+                    print(guess[1], ""is correct"")
+                    print(guess[2], ""is correct"")
+                    print(guess[3], ""is correct"")
+                    print(guess[4], ""is correct"")
+                    score += 1
+                    print(""Current Score is "", score)
+                    break
+    
+    
+    # Wanted to make it analyse each letter and give feedback
+    # I am convinced that I can shorten this part
+    # Also wanted to make it so that it tells you if the letter is elsewhere
+                else:
+                    if str(choice[0]) == str(guess[0]):
+                        print(guess[0], ""is correct"")
+                    else:
+                        print(guess[0], ""is incorrect"")
+    
+    
+                    if str(choice[1]) == str(guess[1]):
+                        print(guess[1], ""is correct"")
+                    else:
+                        print(guess[1], ""is incorrect"")
+    
+    
+                    if str(choice[2]) == str(guess[2]):
+                        print(guess[2], ""is correct"")
+                    else:
+                        print(guess[2], ""is incorrect"")
+    
+    
+                    if str(choice[3]) == str(guess[3]):
+                        print(guess[3], ""is correct"")
+                    else:
+                        print(guess[3], ""is incorrect"")
+    
+    
+                    if str(choice[4]) == str(guess[4]):
+                        print(guess[4], ""is correct"")
+                    else:
+                        print(guess[4], ""is incorrect"")
+            else:
+                print(""Word needs to be 5 letters"")
+    print(""Final Score is"", score, ""Over 10"")",0.21,0,0,0
+Python,func-to-web is now much better – Thanks for the feedback!,"15 days ago I shared func-to-web here and got amazing feedback (150+ upvotes, thank you!). Since then, I've been working hard on the suggestions and added some major features.
 
-See the [usage section ](https://epub-lib.readthedocs.io/en/latest/#basic-usage)of the documentation for a more usage examples.
-
-**Target Audience:**
-
-People working with publishing digital books using the EPUB format.
-
-**Comparison:**
-
-There is already an active python library called [EbookLib](https://pypi.org/project/EbookLib/) for handling EPUBs. A few things EPUBLib does differently:
-
-1. Handles the EPUB non-intrusively, e.g. won't regenerate the package document/metadata before writing, can edit toc without recreating the entire navigation document;
-2. Built-in XML parsing with BeautifulSoup;
-3. Extra features: rename files, remove files, spine reordering etc;
-4. Use nomenclature from the specification when possible (e.g. ""resource"" instead of ""item"").
-
-",0.87,15,0,15
-Python,Sell me (and my team) on UV,"I think UV is great so far, I only recently started using it. I would like to move myself and my team to using it as our official package manager, but I don’t really know the extent of why “this tool is better than venv/pip”. It was hard enough to convince them we should be using venv in the first place, but now I feel like I’m trying to introduce a tool that adds seemingly quite a bit more complexity.
-
-Just curious on all the benefits and what I can say to encourage the movement.
-
-Thanks!",0.35,0,0,0
-Python,Vision Agents 0.1,"First steps here, we've just released 0.1 of Vision Agents. [https://github.com/GetStream/Vision-Agents](https://github.com/GetStream/Vision-Agents)
-
-**What My Project Does**
-
-The idea is that it makes it super simple to build vision agents, combining fast models like Yolo with Gemini/Openai realtime. We're going for low latency &amp; a completely open sdk. So you can use any vision model or video edge network. 
-
-Here's an example of running live video through Yolo and then passing it to Gemini
-
-    agent = Agent(
-        edge=getstream.Edge(),
-        agent_user=agent_user,
-        instructions=""Read @golf_coach.md"",
-        llm=openai.Realtime(fps=10),
-        #llm=gemini.Realtime(fps=1), # Careful with FPS can get expensive
-        processors=[ultralytics.YOLOPoseProcessor(model_path=""yolo11n-pose.pt"")],
-    )
-
-**Target Audience** 
-
-Vision AI is like chatgpt in 2022. It's really fun to see how it works and what's possible. Anything from live coaching, to sports, to physical therapy, robotics, drones etc. But it's not production quality yet. Gemini and OpenAI both hallucinate a ton for vision AI. It seems close to being viable though, especially fun to have it describe your surroundings etc.
-
-**Comparison**
-
-Similar to Livekit Agents (livekit specific) and Pipecat (daily). We're going for open to all edge networks, low latency and with a focus on vision AI (voice works, but we're focused on live video)
-
-This has been fun to work on with the team, finally at 0.1 :)
-
-
-
-",0.8,17,0,17
-Python,Intermediate-level project suggestions,"I need intermediate-level project ideas that I can do with Python. Other languages can be added to the project as well, that’s not a problem. They need to look good on GitHub and on my CV.",0.18,0,0,0
-Python,Fiatlight: Instantly turn Python functions into interactive GUI apps or workflows,"**What Fiatlight Does**
-
-[Fiatlight](https://pthom.github.io/fiatlight_doc) is a Python toolkit that lets you build interactive graphical applications by providing an *automatic user interface* for functions and dataclasses. It is published under the MIT license.
-
-You may think of Fiatlight as *""ComfyUI for any type of data and functions""*: easy visual and interactive pipelines for any domain of interest. You do not have to write any UI code, and you can connect multiple functions to build workflows instantly: the outputs flow from one function to the next
-
-Users can then adjust every parameter of the functions and save/reload their work. 
-
-Fiatlight is built on top of Dear ImGui Bundle. It is very fast, and can provide feedback in real-time (at 120 FPS!). Since Dear ImGui Bundle is available via Pyodide, Fiatlight applications can be used locally or deployed as static web pages, without any server-side component.
-
-As a prototyping tool, fiatlight does *not* provide full design control over the UI. It does however provide advanced viewer for many data types (standard python types, images, files, dataframes, matplotlib figures,  etc.), and is easily extensible.
- 
-*Links:*
-- [Video tutorials](https://pthom.github.io/fiatlight_doc/flgt/video_tutorials.html)
-- [Documentation](https://pthom.github.io/fiatlight_doc)
-- [GitHub repo](https://github.com/pthom/fiatlight)
-
-
-**Target Audience**
-
-* Hobbyists wanting to create interactive applications quickly
-* Educators and instructors needing interactive tools for teaching programming or algorithms
-* Researchers who need shareable demos or visualizations of their work
-* Developers who want to fine tune their algorithms, with visual feedback
-* Library authors who want to showcase or demonstrate how to use and compose their functions
-* Data scientists and analysts wanting instant GUI dashboards for exploring data
-
-
-**Comparison**
-
-* Broader scope than ComfyUI
-* Often faster than streamlit or gradio (runs locally or serverless on a static web page)
-* LabVIEW is famous for data acquisition, hardware integration, and quick GUI building, but is expensive and highly niche/proprietary
-* Unreal Blueprints are widely used for visual scripting in games and rapid prototyping, but tightly coupled to Unreal Engine and less suitable for general Python/data workflows
-
-**Example**
-
-The example below showcases a simple pipeline where the user edits the input float value, and automatically sees the output of each function. Widgets for each parameter are generated according to type and customized with attributes.
+**What it does (quick reminder):**
+Turn any Python function into a web UI with zero boilerplate:
 
 ```python
-# Our functions
-def float_source(x: float = 1.0) -&gt; float:
-    return x
-def double(x: float = 1.0) -&gt; float:
-    return 2 * x
+from func_to_web import run
 
-# Below, our GUI, where the user can edit the input for float_source, and see the output of both functions
+def divide(a: int, b: int):
+    return a / b
 
-import fiatlight as fl
-# Set range for slider
-fl.add_fiat_attributes(float_source, x__edit_type=""slider"", x__range=(0.0, 10.0))  
-
-# Display a GUI for the composition of these two functions
-fl.run([float_source, double])  
+run(divide)  # Web form at localhost:8000
 ```
-",0.77,23,0,23
-Python,Neend some career advice,I am bpharm 4 yr student and I wanted to work in the field of programming and development I basically have no knowledge about programming skills I am currently 22 yr should I pursue with programming or I should just stick to the pharmacy ,0.31,0,0,0
-Python,Looking for a Python developer to port a stable Perl CGI project,"Hello everyone,
 
-I’ve built a fully functional Perl CGI platform that’s stable and bug-free. It’s a small but complete project that has been running reliably.
+**Major updates since v0.1:**
 
-At this point, I’d love to see a developer take it over and help port it to Python (Flask or FastAPI). The goal is to make it more accessible and maintainable for the broader community.
-
-GitHub repo: https://github.com/socaltiger/BatchSubmit.com
-
-Why this could be interesting for you:
-- The project is already complete and working – you won’t have to start from scratch.
-- A chance to practice porting from Perl to Python on a real, running platform.
-- You’ll get to modernize a project and contribute to open source in a meaningful way.
-
-If you’re interested, feel free to fork, submit PRs, or reach out via GitHub issues.  
-I’m happy to guide the process and provide background on the project’s design.
-
-Looking forward to seeing some talent breathe new life into it!",0.3,0,0,0
-Python,Ergonomic Concurrency,"**Project name:** Pipevine  
-**Project link:** [https://github.com/arrno/pipevine](https://github.com/arrno/pipevine)
-
-**What My Project Does**  
-Pipevine is a lightweight async pipeline and worker-pool library for Python.  
-It helps you compose concurrent dataflows with backpressure, retries, and cancellation.. without all the asyncio boilerplate.
-
-**Target Audience**  
-Developers who work with data pipelines, streaming, or CPU/IO-bound workloads in Python.  
-It’s designed to be production-ready but lightweight enough for side projects and experimentation.
-
-**How to Get Started**
-
-    pip install pipevine
-
-    import asyncio
-    from pipevine import Pipeline, work_pool
+**Dynamic Lists** – Add/remove items with advanced validation:
+```python
+def process_data(
+    # Dynamic lists with add/remove buttons
+    images: list[ImageFile],                      # Multiple file uploads
     
-    @work_pool(buffer=10, retries=3, num_workers=4)
-    async def process_data(item, state):
-        # Your processing logic here
-        return item * 2
+    # Dual validation: list size AND individual items
+    scores: Annotated[
+        list[Annotated[int, Field(ge=0, le=100)]], 
+        Field(min_length=3, max_length=10)
+    ],  # 3-10 items required, each 0-100
     
-    @work_pool(buffer=5, retries=1)
-    async def validate_data(item, state):
-        if item &lt; 0:
-            raise ValueError(""Negative values not allowed"")
-        return item
+    # Optional fields with toggle switches
+    notes: str | None = None,                     # Optional text
+    tags: list[str] | None = None                 # Optional list
+):
+    return FileResponse(generate_pdf(), ""report.pdf"")  # Auto-download
+```
+
+**High-Performance File Handling** – Optimized streaming for large files:
+- **Upload**: Real-time progress bars, 8MB chunks, handles GB+ files
+- **Download**: Return `FileResponse(data, filename)` for auto-downloads
+- **Performance**: ~237 MB/s localhost, ~115 MB/s over Gigabit Ethernet
+- **Memory efficient**: Constant usage regardless of file size
+- **Any format**: PDF, Excel, ZIP, images, binary data
+
+**Optional Fields** – `Type | None` creates toggle switches:
+- Fields with defaults start enabled, without defaults start disabled
+- Explicit control: `Type | OptionalEnabled/OptionalDisabled`
+- Works with all types, constraints, and lists
+
+**Dynamic Dropdowns** – Runtime-generated options:
+```python
+def get_themes(): return fetch_from_database()
+
+def configure(theme: Literal[get_themes]): pass  # Fresh options each request
+```
+
+**Rich Output Support**:
+- **PIL Images**: Auto-displayed in browser
+- **Matplotlib plots**: Rendered as PNG
+- **File downloads**: Single or multiple files with streaming
+- **JSON/text**: Formatted with copy-to-clipboard
+
+**UX Improvements**:
+- Dark mode with theme persistence
+- Keyboard shortcuts (Ctrl+Enter to submit)
+- Auto-focus first field
+- Toast notifications
+- Upload progress with speed indicators
+
+**Current stats:**
+- 180+ GitHub stars (The chinese community is sharing it too!)
+- 454 unit tests
+- Published on PyPI: `pip install func-to-web`
+- 20+ runnable examples
+- Used daily for internal tools at multiple companies
+
+**Other improvements:**
+- **Modular architecture**: Code separated by responsibilities (analysis, validation, form building...)
+- **Comprehensive documentation**: Every function and class documented
+- **Detailed changelog**: Track all improvements and breaking changes
+
+I've tried to make this as professional and production-ready as possible while keeping the simple API.
+
+Still focused on internal tools and rapid prototyping, not replacing proper web frameworks.
+
+GitHub: https://github.com/offerrall/FuncToWeb
+
+The community feedback really shaped these improvements. Thank you again! Keep the suggestions coming.",0.85,21,0,21
+Python,I built a tool that tells you how hard a website is to scrape,"# UPDATE:
+
+Website is now live!
+
+Try it now: [https://www.caniscrape.org](https://www.caniscrape.org/)
+
+\- No installation required
+
+\- Instant analysis
+
+\- Same comprehensive checks as the CLI
+
+NOTE:  
+I haven't added the flag capabilities yet so its just the default scan. Its also still one link at a time, so all the great ideas I've received for the website will come soon (I'm gonna keep working on it). It'll take about 1-3 days but ill make it a lot better for the V1.0.0 release.
+
+CLI still available on GitHub for those who prefer it.
+
+
+
+Hi everyone,  
+I made a Python package called **caniscrape** that analyzes any website's anti-bot protections before you start scraping.
+
+It tells you what you're up against (Cloudflare, rate limits, JavaScript rendering, CAPTCHAs, TLS fingerprinting, honeypots) and gives you a difficulty score + specific recommendations.
+
+# What My Project Does
+
+caniscrape checks a website for common anti-bot mechanisms and reports:
+
+* A difficulty score (0–10)
+* Which protections are active (e.g., Cloudflare, Akamai, hCaptcha, etc.)
+* What tools you’ll likely need (headless browsers, proxies, CAPTCHA solvers, etc.)
+* Whether using a scraping API might be better
+
+This helps you decide the right scraping approach before you waste time building a bot that keeps getting blocked.
+
+# Target Audience
+
+* Web scrapers, data engineers, and researchers who deal with protected or dynamic websites
+* Developers who want to test bot-detection systems or analyze site defenses
+* Hobbyists learning about anti-bot tech and detection methods
+
+It’s not a bypassing or cracking tool — it’s for diagnostics and awareness.
+
+# Comparison
+
+Unlike tools like WAFW00F or WhatWaf, which only detect web application firewalls,  
+caniscrape runs multi-layered tests:
+
+* Simulates browser and bot requests (via Playwright)
+* Detects rate limits, JavaScript challenges, and honeypot traps
+* Scores site difficulty based on detection layers
+* Suggests scraping strategies or alternative services
+
+So it’s more of a pre-scrape analysis toolkit, not just a WAF detector.
+
+# Installation
+
+    pip install caniscrape
+
+Quick setup (required):
+
+    playwright install chromium  # Download browser
+    pipx install wafw00f         # WAF detection
+
+# Example Usage
+
+    caniscrape https://example.com
+
+Output includes:
+
+* Difficulty score (0–10)
+* Active protections
+* Recommended tools/approach
+
+# ADVICE:
+
+Results can vary between runs because bot protections adapt dynamically.  
+Some heavy-protection sites (like Amazon) may produce these varied results. Of course, this will improve over time, but running the command multiple times can mitigate this.
+
+# GitHub
+
+[https://github.com/ZA1815/caniscrape](https://github.com/ZA1815/caniscrape)",0.96,489,0,489
+Python,Assembly-to-Minecraft-Command-Block-Compiler (Python) — updated — testers &amp; contributors wanted," I updated a small Python compiler that converts an assembly-like language into Minecraft command-block command sequences. Looking for testers, feedback, and contributors. Repo: [https://github.com/Bowser04/Assembly-to-Minecraft-Command-Block-Compiler](https://github.com/Bowser04/Assembly-to-Minecraft-Command-Block-Compiler)
+
+What My Project Does:
+
+* Parses a tiny assembly-style language (labels, arithmetic, branches, simple I/O) and emits Minecraft command sequences tailored for command blocks.
+* Produces low-level, inspectable output so you can see how program logic maps to in-game command-block logic.
+* Implemented in Python for readability and easy contribution.
+
+Target Audience:
+
+* Minecraft command-block creators who want to run low-level programs without mods.
+* Hobbyist compiler writers and learners looking for a compact Python codegen example.
+* Contributors interested in parsing, code generation, testing strategies, or command optimization.
+* This is an educational/hobby tool for small demos and experiments — not a production compiler for large-scale programs.
+
+Comparison (how it differs from alternatives):
+
+* Assembly-focused: unlike high-level language→Minecraft tools, it targets an assembly-like input so outputs are low-level and easy to debug in command blocks.
+* Python-first and lightweight: prioritizes clarity and contributor-friendliness over performance.
+* Command-block oriented: designed to work with vanilla in-game command blocks (does not target datapacks or mods).
+
+How to help:
+
+* Test: run examples, try outputs in a world, and note Minecraft version and exact steps when something fails.
+* Report: open issues with minimal reproduction files and steps.
+* Contribute: PRs welcome for bug fixes, examples, optimizations, docs, or tests — look for good-first-issue.",0.72,6,0,6
+Python,Access computed Excel values made easy using calc-workbook library,"`calc-workbook` is an easy-to-use Python library that lets you access *computed Excel values* directly from Python. It loads Excel files, evaluates all formulas using the `formulas` engine, and provides a clean, minimal API to read the computed results from each sheet — no Excel installation required.
+
+# What My Project Does
+
+This project solves a common frustration when working with Excel files in Python: most libraries can read or write workbooks, but they can’t compute formulas. `calc-workbook` bridges that gap. You load an Excel file, it computes all the formulas using the `formulas` package, and you can instantly access the computed cell values — just like Excel would show them. Everything runs natively in Python, making it platform-independent and ideal for Linux users who want full Excel compatibility without Excel itself.
+
+# Target Audience
+
+For Python developers, data analysts, or automation engineers who work with Excel files and want to access real formula results (not just static values) without relying on Excel or heavy dependencies.
+
+# Comparison
+
+* **openpyxl** and **pandas** can read and write Excel files but do not calculate formulas.
+* **xlwings** requires Excel to compute formulas and is Windows/macOS only.
+* **calc-workbook** computes formulas natively in Python using the `formulas` engine and gives you the results in one simple call.
+
+# Installation
+
+    pip install calc-workbook
+
+# Example
+
+    from calc_workbook import CalcWorkbook
     
-    # Create and run pipeline
-    pipe = Pipeline(range(100)) &gt;&gt; process_data &gt;&gt; validate_data
-    result = await pipe.run()
+    wb = CalcWorkbook.load(""example.xlsx"")
+    print(wb.get_sheet_names())           # ['sheet1']
     
+    sheet = wb.get_sheet(""sheet1"")        # or get_sheet() to get the first sheet
+    print(""A1:"", sheet.cell(""A1""))        # 10
+    print(""A2:"", sheet.cell(""A2""))        # 20
+    print(""A3:"", sheet.cell(""A3""))        # 200
 
-**Feedback Requested**  
-I’d love thoughts on:
+# Example Excel file:
 
-* API ergonomics (does it feel Pythonic?)
-* Use cases where this could simplify your concurrency setup
-* Naming and documentation clarity",0.8,22,0,22
-Python,Automating the Upgrade to Python 3.14,"I detailed the process I followed to get OpenAI’s codex cli  to upgrade a complex project with lots of dependencies to python 3.14 with uv:
+|**A**|**B**|
+|:-|:-|
+|**1**|10|
+|**2**|20|
+|**3**|`=A1+A2`|
 
-https://x.com/doodlestein/status/1976478297744699771?s=46
+# GitHub
 
-Charlie Marsh retweeted it, so you can trust that it’s not a bunch of nonsense! Hope you guys find it useful.",0.33,0,0,0
+[https://github.com/a-bentofreire/calc-workbook](https://github.com/a-bentofreire/calc-workbook)",0.94,25,0,25
