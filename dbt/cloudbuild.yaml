@@ -2,28 +2,35 @@ substitutions:
   _DBT_DOCS_BUCKET: redlake-dbt-docs
 
 steps:
+  # Step 1: 安装并执行 dbt 所有命令
   - name: python:3.11
+    id: "run-dbt"
     entrypoint: bash
     args:
       - -c
       - |
-        echo "🐍 安装 pip & dbt..."
+        echo "🐍 安装依赖..."
         apt-get update && apt-get install -y git gcc
         pip install --upgrade pip
-        pip install dbt-bigquery google-cloud-storage
+        pip install dbt-bigquery
 
-        echo "📦 安装 dbt-expectations（通过 dbt deps）..."
+        echo "📦 安装 dbt-expectations..."
         dbt deps --profiles-dir /workspace
 
-        echo "▶️ 运行 dbt..."
+        echo "▶️ 执行 dbt..."
         dbt run --profiles-dir /workspace
         dbt test --profiles-dir /workspace
         dbt docs generate --profiles-dir /workspace
 
-        echo "☁️ 上传文档到 GCS..."
-        pip install --upgrade google-cloud-sdk
-        curl https://sdk.cloud.google.com | bash
-        gsutil -m rsync -r target/ gs://${_DBT_DOCS_BUCKET}/
+  # Step 2: 使用官方 gsutil 镜像上传文档到 GCS
+  - name: gcr.io/cloud-builders/gsutil
+    id: "upload-docs"
+    args:
+      - -m
+      - rsync
+      - -r
+      - target/
+      - gs://${_DBT_DOCS_BUCKET}/
 
 timeout: 1800s
 
