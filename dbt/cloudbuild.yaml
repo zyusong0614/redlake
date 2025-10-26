@@ -1,0 +1,17 @@
+substitutions:
+  _DBT_DOCS_BUCKET: redlake-dbt-docs
+
+steps:
+  - name: python:3.11
+    entrypoint: bash
+    args:
+      - -c
+      - |
+        pip install dbt-bigquery dbt-expectations
+        cd dbt
+        dbt deps
+        dbt run
+        dbt test
+        dbt docs generate
+        gsutil -m rsync -r target/ gs://${_DBT_DOCS_BUCKET}/
+timeout: 1800s

@@ -1,0 +1,10 @@
+redlake:
+  target: prod
+  outputs:
+    prod:
+      type: bigquery
+      method: oauth
+      project: redlake-474918
+      dataset: redlake_dw
+      threads: 4
+      location: US

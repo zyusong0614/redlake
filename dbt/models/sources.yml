@@ -1,0 +1,7 @@
+version: 2
+sources:
+  - name: redlake_dw
+    database: redlake-474918
+    tables:
+      - name: reddit_posts_raw
+      - name: reddit_comments_raw
