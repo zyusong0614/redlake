@@ -23,7 +23,6 @@ steps:
         echo "☁️ 上传文档到 GCS..."
         pip install --upgrade google-cloud-sdk
         curl https://sdk.cloud.google.com | bash
-        exec -l $SHELL
         gsutil -m rsync -r target/ gs://${_DBT_DOCS_BUCKET}/
 
 timeout: 1800s
