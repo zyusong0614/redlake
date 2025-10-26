@@ -2,47 +2,32 @@ substitutions:
   _DBT_DOCS_BUCKET: redlake-dbt-docs
 
 steps:
-  - name: gcr.io/cloud-builders/gcloud
-    id: "Install system dependencies & dbt"
+  - name: python:3.11
     entrypoint: bash
     args:
       - -c
       - |
-        echo "🧰 Update apt & install pip, gsutil, git"
-        apt-get update && apt-get install -y python3-pip git
+        echo "🐍 安装 pip & dbt..."
+        apt-get update && apt-get install -y git gcc
+        pip install --upgrade pip
+        pip install dbt-bigquery google-cloud-storage
 
-        echo "🐍 Upgrade pip & install dbt..."
-        pip3 install --upgrade pip
-        pip3 install dbt-bigquery
+        echo "📦 安装 dbt-expectations（通过 dbt deps）..."
+        dbt deps --profiles-dir /workspace
 
-  - name: gcr.io/cloud-builders/gcloud
-    id: "Run dbt"
-    entrypoint: bash
-    args:
-      - -c
-      - |
-        echo "📦 Resolve dbt deps..."
-        dbt deps
+        echo "▶️ 运行 dbt..."
+        dbt run --profiles-dir /workspace
+        dbt test --profiles-dir /workspace
+        dbt docs generate --profiles-dir /workspace
 
-        echo "▶️ Run dbt models"
-        dbt run
-
-        echo "🧪 Run dbt tests"
-        dbt test
-
-        echo "📚 Generate docs"
-        dbt docs generate
-
-  - name: gcr.io/cloud-builders/gsutil
-    id: "Upload docs"
-    args:
-      - -m
-      - rsync
-      - -r
-      - target/
-      - gs://${_DBT_DOCS_BUCKET}/
+        echo "☁️ 上传文档到 GCS..."
+        pip install --upgrade google-cloud-sdk
+        curl https://sdk.cloud.google.com | bash
+        exec -l $SHELL
+        gsutil -m rsync -r target/ gs://${_DBT_DOCS_BUCKET}/
 
 timeout: 1800s
+
 
 
 logsBucket: gs://redlake-build-logs/
