@@ -1,0 +1,12 @@
+name: 'dbt_redlake'
+version: '1.0'
+profile: 'redlake'
+
+models:
+  dbt_redlake:
+    staging:
+      materialized: table
+    intermediate:
+      materialized: ephemeral
+    marts:
+      materialized: view
