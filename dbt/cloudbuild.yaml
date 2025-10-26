@@ -9,6 +9,8 @@ steps:
     args:
       - -c
       - |
+        echo "📁 切换到 dbt 子目录"
+        cd dbt
         echo "🐍 安装依赖..."
         apt-get update && apt-get install -y git gcc
         pip install --upgrade pip
