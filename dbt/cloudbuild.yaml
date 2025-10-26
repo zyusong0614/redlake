@@ -15,3 +15,5 @@ steps:
         dbt docs generate
         gsutil -m rsync -r target/ gs://${_DBT_DOCS_BUCKET}/
 timeout: 1800s
+
+logsBucket: gs://redlake-build-logs/
