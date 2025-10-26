@@ -2,18 +2,47 @@ substitutions:
   _DBT_DOCS_BUCKET: redlake-dbt-docs
 
 steps:
-  - name: python:3.11
+  - name: gcr.io/cloud-builders/gcloud
+    id: "Install system dependencies & dbt"
     entrypoint: bash
     args:
       - -c
       - |
-        pip install dbt-bigquery dbt-expectations
-        cd dbt
+        echo "🧰 Update apt & install pip, gsutil, git"
+        apt-get update && apt-get install -y python3-pip git
+
+        echo "🐍 Upgrade pip & install dbt..."
+        pip3 install --upgrade pip
+        pip3 install dbt-bigquery
+
+  - name: gcr.io/cloud-builders/gcloud
+    id: "Run dbt"
+    entrypoint: bash
+    args:
+      - -c
+      - |
+        echo "📦 Resolve dbt deps..."
         dbt deps
+
+        echo "▶️ Run dbt models"
         dbt run
+
+        echo "🧪 Run dbt tests"
         dbt test
+
+        echo "📚 Generate docs"
         dbt docs generate
-        gsutil -m rsync -r target/ gs://${_DBT_DOCS_BUCKET}/
+
+  - name: gcr.io/cloud-builders/gsutil
+    id: "Upload docs"
+    args:
+      - -m
+      - rsync
+      - -r
+      - target/
+      - gs://${_DBT_DOCS_BUCKET}/
+
 timeout: 1800s
+
 
 logsBucket: gs://redlake-build-logs/
