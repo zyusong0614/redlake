@@ -4,7 +4,6 @@ SELECT DISTINCT
   SAFE_CAST(score AS INT64) AS score,
   SAFE_CAST(parent_id AS STRING) AS parent_id,
   author_hash,
-  subreddit,
   TIMESTAMP(created_utc) AS created_at,
   TIMESTAMP(fetched_at) AS fetched_at
 FROM {{ source('redlake_dw','reddit_comments_raw') }}
