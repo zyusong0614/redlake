@@ -3,89 +3,129 @@
 **Institution:** University of Illinois Urbana-Champaign  
 **Course:** CS598 – Data Curation  
 
+---
+
 ## 1. Overview
-RedLake curates Reddit posts and comments from public subreddits into a FAIR-compliant, legally compliant, and analysis-ready dataset for sentiment analysis.  
-It follows the USGS Data Lifecycle Model: Plan → Acquire → Process → Analyze → Preserve → Publish using Google Cloud Platform (GCP) tools and ethical data management.
+RedLake curates Reddit posts and comments from **five public subreddits** into a **FAIR- and GDPR-compliant**, analysis-ready dataset for sentiment research.  
+It follows the USGS Data Lifecycle Model — *Plan → Acquire → Process → Analyze → Preserve → Publish* — and uses **Google Cloud Platform (GCP)** components for automation and reproducibility.
+
+At this stage, the pipeline is actively tested and operational for `r/technology`, with extensions to four additional subreddits in progress.
+
+---
 
 ## 2. Data Description
-RedLake collects data from five public subreddits:
+
+### 2.1 Collection Scope
+RedLake collects data from:
 `r/technology`, `r/gaming`, `r/artificial`, `r/Futurology`, and `r/Computers`.
 
-### 2.1 Processed Dataset Fields
-| Field | Type | Description |
-|--------|------|-------------|
-| id | STRING | Reddit unique ID (t3_ or t1_). |
-| author_hash | STRING | SHA-256 hashed username (anonymized). |
-| title | STRING | Cleaned post title. |
-| body | STRING | Cleaned post/comment text (HTML removed). |
-| created_utc | TIMESTAMP | UTC-standardized timestamp. |
-| score | INTEGER | Upvotes count. |
-| num_comments | INTEGER | Comment count (for posts). |
-| subreddit | STRING | Subreddit name. |
-| fetched_at | TIMESTAMP | Data collection time. |
+Each scheduled run fetches:
+- **10 rising posts per subreddit**
+- **5 comments per post**
+- Latest trending discussions only (no historical scraping)
+  
+This approach ensures lightweight, current, and ethically sourced data.
 
-### 2.2 Final Curated Dataset Fields
+---
+
+### 2.2 Processed Dataset Fields
+
 | Field | Type | Description |
 |--------|------|-------------|
-| All above |  | Retained as base. |
-| sentiment_label | STRING | Sentiment (positive, neutral, negative). |
-| sentiment_score | FLOAT | Confidence score from NLP model. |
-| data_quality_flag | STRING | Validation result (valid, duplicate_removed). |
-| curation_version | STRING | Version ID (e.g., v1.0_2025-10-24). |
-| metadata_json | JSON | DataCite/Schema.org metadata embedded. |
-| processing_time | TIMESTAMP | Record creation time. |
+| `post_id` / `comment_id` | STRING | Reddit unique IDs (t3_ or t1_). |
+| `author_hash` | STRING | SHA-256 hashed username (anonymized). |
+| `title` / `body` | STRING | Cleaned post or comment text. |
+| `created_utc` | TIMESTAMP | Normalized UTC timestamp. |
+| `score` | INTEGER | Upvote count. |
+| `num_comments` | INTEGER | Comment count (posts only). |
+| `subreddit` | STRING | Source subreddit. |
+| `fetched_at` | TIMESTAMP | Data collection time. |
+
+---
+
+### 2.3 Curated Dataset Additions
+
+| Field | Type | Description |
+|--------|------|-------------|
+| `sentiment_score` | FLOAT | Estimated sentiment proxy (from upvote polarity). |
+| `data_quality_flag` | STRING | dbt test validation result. |
+| `curation_version` | STRING | Dataset batch version (e.g., `v1.0_2025-10-27`). |
+| `metadata_json` | JSON | DataCite/Schema.org-compliant metadata. |
+| `processing_time` | TIMESTAMP | Record creation timestamp. |
+
+---
 
 ## 3. Collection & Infrastructure
-- API Client: PRAW v7.7.1+  
-- User-Agent:
-  RedLakeBot/0.2 (academic research by u/YOUR_USERNAME, CS598 UIUC)
-- Pipeline:
-  Reddit API → Cloud Function (fetch) → GCS /raw_json/
-              → Cloud Function (process) → GCS /processed/
-              → BigQuery redlake_dw → Curated dataset
-- Filters: Posts/comments marked [removed] or [deleted] are ignored.  
-- Anonymization: SHA-256 hashing of usernames applied before storage.  
-- Scheduling: Cloud Scheduler triggers daily runs.
+
+| Component | Technology | Description |
+|------------|-------------|-------------|
+| API Client | **PRAW 7.7.1+** | Reddit API wrapper. |
+| Function | **Cloud Function: `redditfetcher`** | Fetches, anonymizes, and uploads JSON to GCS. |
+| Storage | **Google Cloud Storage** | Raw JSON saved in `/raw_json/`. |
+| Processing | **dbt + BigQuery** | Cleans and validates raw data into staging and mart layers. |
+| Scheduler | **Cloud Scheduler (daily)** | Triggers ingestion with OIDC token authentication. |
+
+Anonymization via **Microsoft Presidio** occurs inside the Cloud Function before upload.
+
+---
 
 ## 4. Ethics and Legal Compliance
-- Complies with Reddit API Terms and GDPR.  
-- No usernames, IPs, or personal identifiers retained.  
-- [removed] or [deleted] content skipped automatically.  
-- Raw data is anonymized before storage → classified as non-personal data.  
-- License: CC BY-NC 4.0 (non-commercial academic use).  
+- Fully compliant with **Reddit API Terms** and **GDPR**.  
+- No usernames, URLs, or other personal identifiers stored.  
+- `[removed]` and `[deleted]` content automatically excluded.  
+- Only anonymized, non-personal data reaches GCS or BigQuery.  
+- License: **CC BY-NC 4.0 (non-commercial academic use).**
+
+---
 
 ## 5. Data Quality & Documentation
-| Metric | Target | Validation |
-|---------|---------|-------------|
-| Duplicate rate | <1% | Spark deduplication |
-| Missing text | <5% | Filter [removed], [deleted] |
-| Timestamp validity | 100% | UTC conversion |
-| Sentiment coverage | >90% | NLP API logs |
 
-All validation results stored as data_quality_report.json in /processed/reports/.  
-Metadata standards: DataCite + Schema.org JSON-LD.
+| Metric | Target | Validation Method |
+|---------|---------|------------------|
+| Duplicate rate | <1% | dbt DISTINCT selection |
+| Missing text | <5% | `IS NOT NULL` filters |
+| Timestamp validity | 100% | UTC normalization |
+| Schema consistency | 100% | dbt schema.yml enforcement |
+| Sentiment field coverage | >90% | dbt validation logs |
+
+Quality reports are logged automatically via **dbt test** and visible in **dbt Docs** hosted at `gs://redlake-dbt-docs`.
+
+Metadata standards: **DataCite 4.5** + **Schema.org Dataset**.
+
+---
 
 ## 6. Data Preservation
-| Stage | Location | Retention |
-|--------|-----------|------------|
-| Raw (anonymized) | GCS /raw_json/ | Permanent |
-| Processed | GCS /processed/ | Permanent |
-| Curated | BigQuery redlake_dw | Permanent |
+
+| Stage | Storage | Retention Policy |
+|--------|----------|------------------|
+| Raw (anonymized) | `gs://redlake/raw_json/` | Permanent |
+| Processed | `gs://redlake/processed/` | Permanent |
+| Curated | `BigQuery redlake_dw` | Permanent |
 | Published | GitHub + Zenodo (DOI) | Permanent |
 
+All stages contain only anonymized, non-personal data.
+
+---
+
 ## 7. Roles
-| Member | Role |
-|---------|------|
-| Zhengyu Song | GCP infrastructure, Dataproc, Iceberg integration |
-| Siyi Song | GDPR compliance, metadata, sentiment analysis |
-| Shared | Documentation, testing, publishing |
+
+| Member | Responsibilities |
+|---------|------------------|
+| Zhengyu Song | GCP Infrastructure, API Integration, dbt Automation |
+| Siyi Song | GDPR Compliance, Metadata Documentation, Sentiment Analysis |
+| Shared | Quality validation, reporting, and publication |
+
+---
 
 ## 8. References
-- Reddit (2021). Data API Terms.  
-- European Union (2016). GDPR Regulation.  
-- Faundeen, J. L. et al. (2014). USGS Data Lifecycle Model.  
-- Wilkinson, M. D. et al. (2016). FAIR Principles.  
-- Google Cloud (2025). Cloud Data Security Documentation.  
+- Reddit (2021). *Data API Terms.*  
+- EU (2016). *GDPR Regulation.*  
+- Faundeen, J. L. et al. (2014). *USGS Data Lifecycle Model.*  
+- Wilkinson, M. D. et al. (2016). *FAIR Principles.*  
+- Google Cloud (2025). *Cloud Data Security Documentation.*
+
+---
 
 ## Summary
-RedLake applies real-time anonymization, ethical filtering, and transparent metadata tracking to ensure that every stage—from data acquisition to publication—is legally compliant and reproducible.
+RedLake ensures ethical, traceable, and compliant Reddit data curation using lightweight GCP automation.  
+Its pipeline—from real-time anonymization to dbt validation—forms a transparent, reproducible foundation for research-ready, FAIR-compliant datasets.
