@@ -1,6 +1,6 @@
 WITH comments AS (
   SELECT
-    REGEXP_REPLACE(parent_id, '^t3_', '') AS post_id,
+    post_id AS post_id,
     AVG(score) AS avg_comment_score,
     COUNT(comment_id) AS total_comments
   FROM {{ ref('stg_reddit_comments') }}
