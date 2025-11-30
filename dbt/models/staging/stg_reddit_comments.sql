@@ -8,6 +8,7 @@ renamed as (
     safe_cast(body as string) as body,
     safe_cast(score as int64) as score,
     safe_cast(post_id as string) as post_id,
+    safe_cast(sentiment_score as float64) as sentiment_score,
     author_hash,
     timestamp(created_utc) as created_at,
     timestamp(fetched_at) as fetched_at
