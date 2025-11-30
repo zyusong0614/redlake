@@ -19,6 +19,9 @@ steps:
         echo "📦 安装 dbt-expectations..."
         dbt deps --profiles-dir .
 
+        echo "🌱 加载 seeds..."
+        dbt seed --profiles-dir .
+
         echo "▶️ 执行 dbt..."
         dbt run --profiles-dir .
         dbt test --profiles-dir .

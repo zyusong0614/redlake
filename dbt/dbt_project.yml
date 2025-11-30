@@ -1,6 +1,7 @@
 name: 'dbt_redlake'
 version: '1.0'
 profile: 'redlake'
+data-paths: ["seeds"]
 
 models:
   dbt_redlake:

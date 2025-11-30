@@ -1,0 +1,65 @@
+keyword,category
+openai,AI Model
+chatgpt,AI Model
+gpt-4,AI Model
+gemini,AI Model
+claude,AI Model
+llama,AI Model
+mistral,AI Model
+stable diffusion,AI Generative
+midjourney,AI Generative
+copilot,AI Tool
+agi,AI Concept
+hallucination,AI Concept
+python,Language
+rust,Language
+go,Language
+golang,Language
+javascript,Language
+typescript,Language
+c++,Language
+java,Language
+swift,Language
+mojo,Language
+zig,Language
+kubernetes,Infrastructure
+docker,Infrastructure
+aws,Cloud
+azure,Cloud
+gcp,Cloud
+snowflake,Data Tool
+databricks,Data Tool
+dbt,Data Tool
+kafka,Data Tool
+postgres,Database
+mongodb,Database
+react,Framework
+nextjs,Framework
+vue,Framework
+svelte,Framework
+tailwind,Framework
+flutter,Framework
+layoff,Career
+hiring,Career
+remote work,Career
+rto,Career
+return to office,Career
+salary,Career
+compensation,Career
+interview,Career
+leetcode,Career
+pip,Career
+offer rescinded,Career
+google,Big Tech
+microsoft,Big Tech
+apple,Big Tech
+meta,Big Tech
+nvidia,Big Tech
+amazon,Big Tech
+tesla,Big Tech
+gpu,Hardware
+h100,Hardware
+nvidia h100,Hardware
+apple silicon,Hardware
+vision pro,Hardware
+raspberry pi,Hardware

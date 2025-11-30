@@ -1,10 +1,19 @@
-SELECT DISTINCT
-  comment_id,
-  SAFE_CAST(body AS STRING) AS body,
-  SAFE_CAST(score AS INT64) AS score,
-  SAFE_CAST(post_id AS STRING) AS post_id,
-  author_hash,
-  TIMESTAMP(created_utc) AS created_at,
-  TIMESTAMP(fetched_at) AS fetched_at
-FROM {{ source('redlake_dw','reddit_comments_raw') }}
-WHERE body IS NOT NULL
+with source as (
+  select * from {{ source('redlake_dw', 'reddit_comments_raw') }}
+),
+
+renamed as (
+  select
+    comment_id,
+    safe_cast(body as string) as body,
+    safe_cast(score as int64) as score,
+    safe_cast(post_id as string) as post_id,
+    author_hash,
+    timestamp(created_utc) as created_at,
+    timestamp(fetched_at) as fetched_at
+  from source
+  where body is not null
+    and lower(body) not in ('[deleted]', '[removed]')
+)
+
+select * from renamed

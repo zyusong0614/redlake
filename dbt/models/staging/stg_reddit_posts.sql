@@ -1,11 +1,20 @@
-SELECT DISTINCT
-  post_id,
-  LOWER(TRIM(title)) AS title,
-  SAFE_CAST(score AS INT64) AS score,
-  SAFE_CAST(num_comments AS INT64) AS num_comments,
-  author_hash,
-  subreddit,
-  TIMESTAMP(created_utc) AS created_at,
-  TIMESTAMP(fetched_at) AS fetched_at
-FROM {{ source('redlake_dw','reddit_posts_raw') }}
-WHERE title IS NOT NULL
+with source as (
+  select * from {{ source('redlake_dw', 'reddit_posts_raw') }}
+),
+
+renamed as (
+  select
+    post_id,
+    subreddit,
+    title,
+    coalesce(body, '') as body,
+    safe_cast(score as int64) as score,
+    safe_cast(num_comments as int64) as num_comments,
+    author_hash,
+    timestamp(created_utc) as created_at,
+    timestamp(fetched_at) as fetched_at
+  from source
+  where title is not null
+)
+
+select * from renamed
