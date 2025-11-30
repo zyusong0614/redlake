@@ -1,65 +1,119 @@
 keyword,category
-openai,AI Model
+openai,AI Company
+anthropic,AI Company
+deepseek,AI Company
+mistral,AI Company
+huggingface,AI Company
 chatgpt,AI Model
-gpt-4,AI Model
-gemini,AI Model
-claude,AI Model
-llama,AI Model
-mistral,AI Model
+gpt-4o,AI Model
+claude 3.5,AI Model
+llama 3,AI Model
+deepseek r1,AI Model
+qwen,AI Model
+gemini 1.5,AI Model
 stable diffusion,AI Generative
 midjourney,AI Generative
-copilot,AI Tool
-agi,AI Concept
-hallucination,AI Concept
-python,Language
-rust,Language
-go,Language
-golang,Language
-javascript,Language
-typescript,Language
-c++,Language
-java,Language
-swift,Language
-mojo,Language
-zig,Language
-kubernetes,Infrastructure
-docker,Infrastructure
-aws,Cloud
-azure,Cloud
-gcp,Cloud
-snowflake,Data Tool
-databricks,Data Tool
-dbt,Data Tool
-kafka,Data Tool
-postgres,Database
-mongodb,Database
-react,Framework
-nextjs,Framework
-vue,Framework
-svelte,Framework
-tailwind,Framework
-flutter,Framework
-layoff,Career
-hiring,Career
-remote work,Career
-rto,Career
-return to office,Career
-salary,Career
-compensation,Career
+flux,AI Generative
+langchain,AI Agent Framework
+langgraph,AI Agent Framework
+autogen,AI Agent Framework
+crewai,AI Agent Framework
+agno,AI Agent Framework
+phidata,AI Agent Framework
+pydanticai,AI Agent Framework
+smolagents,AI Agent Framework
+llamaindex,AI Agent Framework
+semantic kernel,AI Agent Framework
+mcp,AI Agent Protocol
+model context protocol,AI Agent Protocol
+rag,AI Tech
+function calling,AI Tech
+tool use,AI Tech
+computer use,AI Tech
+agentic,AI Tech
+cot,AI Tech
+chain of thought,AI Tech
+deepspeed,AI Training Stack
+megatron-lm,AI Training Stack
+megatron-core,AI Training Stack
+ray framework,AI Training Stack
+ray tune,AI Training Stack
+kuberay,AI Training Stack
+horovod,AI Training Stack
+optuna,AI Training Stack
+hyperopt,AI Training Stack
+pytorch,AI Training Stack
+jax,AI Training Stack
+distributed training,AI Training Stack
+model parallelism,AI Training Stack
+data parallelism,AI Training Stack
+rlhf,AI Training Stack
+quantization,AI Training Stack
+kubeflow,MLOps Stack
+kserve,MLOps Stack
+mlflow,MLOps Stack
+weights & biases,MLOps Stack
+wandb,MLOps Stack
+bentoml,MLOps Stack
+model registry,MLOps Stack
+feature store,MLOps Stack
+feast,MLOps Stack
+sagemaker,MLOps Stack
+vertex ai,MLOps Stack
+airflow,Data Stack
+dagster,Data Stack
+prefect,Data Stack
+temporal,Data Stack
+dbt,Data Stack
+snowflake,Data Stack
+databricks,Data Stack
+apache iceberg,Data Stack
+delta lake,Data Stack
+kafka,Data Stack
+rabbitmq,Data Stack
+vector database,Data Stack
+pinecone,Data Stack
+weaviate,Data Stack
+chromadb,Data Stack
+milvus,Data Stack
+qdrant,Data Stack
+kubernetes,Infra & Backend
+k8s,Infra & Backend
+docker,Infra & Backend
+terraform,Infra & Backend
+ansible,Infra & Backend
+prometheus,Infra & Backend
+grafana,Infra & Backend
+argocd,Infra & Backend
+ci/cd,Infra & Backend
+concurrency,Infra & Backend
+multithreading,Infra & Backend
+asyncio,Infra & Backend
+event loops,Infra & Backend
+race conditions,Infra & Backend
+distributed systems,Infra & Backend
+backend engineering,Infra & Backend
+gpu,Hardware
+nvidia,Hardware
+h100,Hardware
+b200,Hardware
+rtx 5090,Hardware
+rtx 4090,Hardware
+infiniband,Hardware
+cuda,Hardware
 interview,Career
 leetcode,Career
+system design,Career
+layoff,Career
+hiring freeze,Career
+rto,Career
+return to office,Career
 pip,Career
+severance,Career
 offer rescinded,Career
+founder mode,Career
 google,Big Tech
 microsoft,Big Tech
-apple,Big Tech
 meta,Big Tech
-nvidia,Big Tech
-amazon,Big Tech
-tesla,Big Tech
-gpu,Hardware
-h100,Hardware
-nvidia h100,Hardware
-apple silicon,Hardware
-vision pro,Hardware
-raspberry pi,Hardware
+apple,Big Tech
+netflix,Big Tech
