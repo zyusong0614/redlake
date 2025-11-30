@@ -131,7 +131,6 @@ def fetch_posts_with_comments(subreddit_name, limit=10):
                         'author_hash': sha256_hash(str(comment.author)) if comment.author else None,
                         'created_utc': datetime.fromtimestamp(comment.created_utc, tz=timezone.utc).isoformat(),
                         'score': comment.score,
-                        'parent_id': comment.parent_id,
                         'fetched_at': datetime.utcnow().isoformat()
                     })
                 logger.info(f"🗨️  Fetched comments for post {post.id} ({len(comments)} total comments so far)")
