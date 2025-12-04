@@ -1,0 +1,21 @@
+subreddit,category
+LocalLLaMA,AI Core & Agents
+AI_Agents,AI Core & Agents
+LangChain,AI Core & Agents
+AutoGPT,AI Core & Agents
+OpenAI,AI Core & Agents
+ChatGPTCoding,AI Core & Agents
+mcp,AI Core & Agents
+MachineLearning,ML Engineering & Academia
+DeepLearning,ML Engineering & Academia
+NaturalLanguageProcessing,ML Engineering & Academia
+LearnMachineLearning,ML Engineering & Academia
+MLOps,Platform & Infrastructure
+Kubeflow,Platform & Infrastructure
+DataEngineering,Platform & Infrastructure
+DevOps,Platform & Infrastructure
+Kubernetes,Platform & Infrastructure
+Airflow,Platform & Infrastructure
+SRE,Platform & Infrastructure
+Nvidia,Hardware
+CUDA,Hardware
