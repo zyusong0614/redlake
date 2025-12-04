@@ -27,6 +27,17 @@ You can rename resources as you like, but keep them consistent across steps.
 
 ---
 
+## Project Preview
+
+![RedLake Architecture Overview](archi_graph/redlake_progress_report.png)
+
+- **dbt FAIR documentation** (model lineage, schema, tests):  
+  https://storage.googleapis.com/redlake-dbt-docs/index.html#!/overview
+- **Looker Studio report** (simple example dashboard built on the curated dataset):  
+  https://lookerstudio.google.com/reporting/ab66ee23-2e9d-4c0d-9ca9-8f0420e25ddd
+
+---
+
 ## 1. Prerequisites
 
 - A Google Cloud project (call it `YOUR_GCP_PROJECT_ID`)
